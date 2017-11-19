@@ -29,8 +29,10 @@ S3 File Access Abstraction providing Memory and Disk Caching Layer. Useful e.g. 
 ```javascript
 const s3 = require("s3-cached")({
   bucket: "YOUR_BUCKET_NAME",
-  accessKeyId: "YOUR_ACCESS_KEY_ID",
-  secretAccessKey: "YOUR_SECRET_ACCESS_KEY"
+  s3Options: {
+    accessKeyId: "YOUR_ACCESS_KEY_ID",
+    secretAccessKey: "YOUR_SECRET_ACCESS_KEY"
+  }
 });
 
 s3.getJsonObjectCached("large.json").then((json) => {
@@ -56,19 +58,18 @@ Type: `string`<br>
 
 Specify the Bucket name you want to retrieve data from.
 
-### accessKeyId
+### s3Options
 
-Type: `string`<br>
-Default: Globally configured access key
+Type: `object`<br>
+Default: -
 
-Allows to set a custom access key for accessing this bucket.
-
-### secretAccessKey
-
-Type: `string`<br>
-Default: Globally configured secret access key
-
-Allows to set a custom secret access key for accessing this bucket.
+Forward options into s3 initialization. E.g.
+```javascript
+{
+  accessKeyId: "YOUR_ACCESS_KEY_ID",
+  secretAccessKey: "YOUR_SECRET_ACCESS_KEY"
+}
+``` 
 
 ### ttlDefault
 
