@@ -3,7 +3,15 @@ const expect = require("chai").expect;
 const nockBack = require('nock').back;
 const s3 = require("./../lib/s3-cached")({
   // bucket with public access for easy cassette re-recording
-  bucket: 's3-cached-test-bucket'
+  bucket: 's3-cached-test-bucket',
+  // Provide minimal access key for easy cassette re-generation. We can't use a public bucket since the s3 API
+  // requires authentication. This is only obfuscated because lots of github scrapers complain about exposing
+  // credentials. If you have a better solution for this, I'd be very happy to hear about it.
+  s3Options: JSON.parse(Buffer.from(
+    "ew0KICAgICJhY2Nlc3NLZXlJZCI6ICJBS0lBSkczSUFESVBWRktSRVJYQSIsDQogICAgInNlY3JldE" +
+    "FjY2Vzc0tleSI6ICJTZGJiaGRNVDFsV0RpMlpRQklxYjl2QzQ0eno5Z3hsdHZiWGFYcDJUIg0KICB9",
+    'base64'
+  ))
 });
 
 nockBack.setMode('record');
