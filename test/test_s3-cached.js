@@ -22,6 +22,8 @@ describe("Testing S3-Cached", () => {
 
   it("Testing GZIP", (done) => {
     nockBack(`test_gzip.json_recording.json`, {}, (nockDone) => {
+      // Important: There is currently a bug in Nock, which requires us to add gzip content type
+      // manually into  the recorded files. Reference: https://github.com/node-nock/nock/issues/1001
       s3.getDeflatedObjectCached("large.json.gz").then((r) => {
         const json = JSON.parse(r);
         expect(json[0].tags).to.include("anim");
