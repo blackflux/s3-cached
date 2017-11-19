@@ -1,7 +1,7 @@
 {
   "name": "s3-cached",
   "version": "0.0.0-development",
-  "description": "S3 Wrapper",
+  "description": "S3 File Access Abstraction providing Memory and Disk Caching Layer",
   "main": "lib/cached-s3.js",
   "scripts": {
     "test": "grunt gardener",
