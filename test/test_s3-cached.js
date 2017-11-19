@@ -3,9 +3,7 @@ const expect = require("chai").expect;
 const nockBack = require('nock').back;
 const s3 = require("./../lib/s3-cached")({
   // bucket with public access for easy cassette re-recording
-  bucket: 's3-cached-test-bucket',
-  accessKeyId: "",
-  secretAccessKey: ""
+  bucket: 's3-cached-test-bucket'
 });
 
 nockBack.setMode('record');
