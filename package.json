@@ -2,7 +2,7 @@
   "name": "s3-cached",
   "version": "0.0.0-development",
   "description": "S3 File Access Abstraction providing Memory and Disk Caching Layer",
-  "main": "lib/cached-s3.js",
+  "main": "lib/s3-cached.js",
   "scripts": {
     "test": "grunt gardener",
     "coveralls": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
@@ -36,10 +36,13 @@
   "homepage": "https://github.com/simlu/s3-cached#readme",
   "dependencies": {
     "aws-sdk": "2.153.0",
+    "lodash.defaults": "4.2.0",
     "cache-manager": "2.5.0",
     "cache-manager-fs": "1.0.6"
   },
   "devDependencies": {
+    "chai": "4.1.2",
+    "nock": "9.1.0",
     "js-gardener": "1.5.4",
     "coveralls": "3.0.0",
     "semantic-release": "8.2.0"
