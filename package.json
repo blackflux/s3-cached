@@ -1,0 +1,53 @@
+{
+  "name": "s3-cached",
+  "version": "0.0.0-development",
+  "description": "S3 Wrapper",
+  "main": "lib/cached-s3.js",
+  "scripts": {
+    "test": "grunt gardener",
+    "coveralls": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simlu/s3-cached.git"
+  },
+  "keywords": [
+    "s3",
+    "aws",
+    "cache",
+    "memory-cache",
+    "disk-cache",
+    "files",
+    "storage",
+    "cloud"
+  ],
+  "author": "",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/simlu/s3-cached/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/simlu/s3-cached/issues"
+  },
+  "homepage": "https://github.com/simlu/s3-cached#readme",
+  "dependencies": {
+    "aws-sdk": "2.153.0",
+    "cache-manager": "2.5.0",
+    "cache-manager-fs": "1.0.6"
+  },
+  "devDependencies": {
+    "js-gardener": "1.5.3",
+    "coveralls": "3.0.0",
+    "semantic-release": "8.2.0"
+  },
+  "engines": {
+    "node": ">= 6.10.3"
+  },
+  "files": [
+    "lib"
+  ]
+}
