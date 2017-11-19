@@ -4,8 +4,8 @@ const nockBack = require('nock').back;
 const s3 = require("./../lib/s3-cached")({
   // bucket with public access for easy cassette re-recording
   bucket: 's3-cached-test-bucket',
-  access_key_id: "",
-  secret_access_key: ""
+  accessKeyId: "",
+  secretAccessKey: ""
 });
 
 nockBack.setMode('record');
