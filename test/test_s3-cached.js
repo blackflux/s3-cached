@@ -22,6 +22,16 @@ describe("Testing S3-Cached", () => {
     });
   });
 
+  it("Testing Invalid JSON", (done) => {
+    nockBack(`invalid.json_recording.json`, {}, (nockDone) => {
+      s3.getJsonObjectCached("invalid.json").catch((err) => {
+        expect(err.message).to.equal("Unexpected token \u001f in JSON at position 0");
+        nockDone();
+        done();
+      });
+    });
+  });
+
   it("Testing JSON", (done) => {
     nockBack(`large.json_recording.json`, {}, (nockDone) => {
       s3.getJsonObjectCached("large.json").then((json) => {
