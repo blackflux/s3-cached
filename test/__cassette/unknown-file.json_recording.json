@@ -1,0 +1,24 @@
+[
+    {
+        "scope": "https://s3-cached-test-bucket.s3.amazonaws.com:443",
+        "method": "GET",
+        "path": "/unknown-file.json",
+        "body": "",
+        "status": 403,
+        "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>070328D43FFD350B</RequestId><HostId>r5PwvuS8meuVkWJsUZEFYLuUA3ZuseBGjRKUY3SPXI47Y15W2JkIJOgC4W9+0ZmqmQxrdfVzCEA=</HostId></Error>",
+        "rawHeaders": [
+            "x-amz-request-id",
+            "070328D43FFD350B",
+            "x-amz-id-2",
+            "r5PwvuS8meuVkWJsUZEFYLuUA3ZuseBGjRKUY3SPXI47Y15W2JkIJOgC4W9+0ZmqmQxrdfVzCEA=",
+            "Content-Type",
+            "application/xml",
+            "Transfer-Encoding",
+            "chunked",
+            "Date",
+            "Sun, 19 Nov 2017 20:34:29 GMT",
+            "Server",
+            "AmazonS3"
+        ]
+    }
+]
