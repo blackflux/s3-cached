@@ -2,10 +2,10 @@ const path = require("path");
 const expect = require("chai").expect;
 const nockBack = require('nock').back;
 const s3 = require("./../lib/s3-cached")({
+  // bucket with public access for easy cassette re-recording
   bucket: 's3-cached-test-bucket',
-  // test key with minimal permissions making it easy to re-generate cassettes
-  access_key_id: "AKIAJYSLHIWEUJLG2TJQ",
-  secret_access_key: "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"
+  access_key_id: "",
+  secret_access_key: ""
 });
 
 nockBack.setMode('record');
