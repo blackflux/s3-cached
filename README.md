@@ -10,7 +10,7 @@
 [![Gardener](https://github.com/simlu/js-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/js-gardener)
 [![Gitter](https://github.com/simlu/js-gardener/blob/master/assets/icons/gitter.svg)](https://gitter.im/simlu/s3-cached)
 
-S3 File Access Abstraction providing Memory and Disk Caching Layer. Useful e.g. in lambda functions if you want to reduce the amount of s3 access for serving static files.
+S3 File Access Abstraction providing Memory and Disk Caching Layer. Useful e.g. in lambda functions if you want to reduce the amount of s3 access for serving (semi-)static files.
 
 ## What it does
 
