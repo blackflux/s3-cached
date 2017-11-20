@@ -12,6 +12,7 @@ const s3 = require("./../lib/s3-cached")({
 // dummy credentials are required for mock since AWS raises "Missing credentials" if non are found
 defaults(AWS.config, {
   credentials: {
+    region: "DUMMY_REGION",
     accessKeyId: "DUMMY_ACCESS_KEY_ID",
     privateAccessKey: "DUMMY_PRIVATE_ACCESS_KEY"
   }
