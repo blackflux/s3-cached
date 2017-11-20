@@ -1,17 +1,19 @@
 const path = require("path");
 const expect = require("chai").expect;
 const nockBack = require('nock').back;
+const defaults = require('lodash.defaults');
+const AWS = require("aws-sdk");
 const s3 = require("./../lib/s3-cached")({
-  // bucket with public access for easy cassette re-recording
-  bucket: 's3-cached-test-bucket',
-  // Provide minimal access key for easy cassette re-generation. We can't use a public bucket since the s3 API
-  // requires authentication. This is only obfuscated because lots of github scrapers complain about exposing
-  // credentials. If you have a better solution for this, I'd be very happy to hear about it.
-  s3Options: JSON.parse(Buffer.from(
-    "ew0KICAgICJhY2Nlc3NLZXlJZCI6ICJBS0lBSkczSUFESVBWRktSRVJYQSIsDQogICAgInNlY3JldE" +
-    "FjY2Vzc0tleSI6ICJTZGJiaGRNVDFsV0RpMlpRQklxYjl2QzQ0eno5Z3hsdHZiWGFYcDJUIg0KICB9",
-    'base64'
-  ))
+  // temporarily fill in your own bucket to record tests and place any new file in assets folder
+  // when done restore bucket name and replace bucket name in cassette files
+  bucket: "s3-cached-test-bucket",
+  s3Options: defaults({
+    accessKeyId: AWS.config.credentials.accessKeyId,
+    privateAccessKey: AWS.config.credentials.secretAccessKey
+  }, { // dummy credentials are required for mock since AWS raises "Missing credentials" if non are found
+    accessKeyId: "DUMMY_ACCESS_KEY_ID",
+    privateAccessKey: "DUMMY_PRIVATE_ACCESS_KEY"
+  })
 });
 
 nockBack.setMode('record');
