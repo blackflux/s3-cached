@@ -8,8 +8,8 @@ const s3 = require("./../lib/s3-cached")({
   // When done restore bucket name and replace bucket name in cassette files
   bucket: "dummy-bucket-name",
   s3Options: { // dummy credentials are required for mock since AWS raises "Missing credentials" if non are found
-    accessKeyId: get(AWS, "config.credentials.accessKeyId", "00000000000000000000"),
-    privateAccessKey: get(AWS, "config.credentials.secretAccessKey", "0000000000000000000000000000000000000000")
+    accessKeyId: get(AWS, "config.credentials.accessKeyId", "0123456789ABCDEFGHIJ"),
+    privateAccessKey: get(AWS, "config.credentials.secretAccessKey", "0123456789ABCDEFGHIJ0123456789ABCDEFGHIJ")
   }
 });
 
