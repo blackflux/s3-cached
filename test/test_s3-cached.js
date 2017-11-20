@@ -1,7 +1,7 @@
 const path = require("path");
 const expect = require("chai").expect;
 const nockBack = require('nock').back;
-const defaults = require('lodash.defaults');
+const get = require('lodash.get');
 const AWS = require("aws-sdk");
 const s3 = require("./../lib/s3-cached")({
   // Temporarily fill in your own bucket to record tests and place any used files in assets folder.
@@ -10,13 +10,8 @@ const s3 = require("./../lib/s3-cached")({
 });
 
 // dummy credentials are required for mock since AWS raises "Missing credentials" if non are found
-defaults(AWS.config, {
-  credentials: {
-    region: "DUMMY_REGION",
-    accessKeyId: "DUMMY_ACCESS_KEY_ID",
-    privateAccessKey: "DUMMY_PRIVATE_ACCESS_KEY"
-  }
-});
+process.env.AWS_ACCESS_KEY_ID = get(AWS, 'config.credentials.accessKeyId', "DUMMY");
+process.env.AWS_SECRET_ACCESS_KEY = get(AWS, 'config.credentials.secretAccessKey', "DUMMY");
 
 nockBack.setMode('record');
 nockBack.fixtures = path.join(__dirname, "__cassette");
