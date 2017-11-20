@@ -1,6 +1,6 @@
 [
     {
-        "scope": "https://s3-cached-test-bucket.s3.amazonaws.com:443",
+        "scope": "https://dummy-bucket-name.s3.amazonaws.com:443",
         "method": "GET",
         "path": "/large.json.gz",
         "body": "",

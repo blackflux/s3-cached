@@ -4,9 +4,9 @@ const nockBack = require('nock').back;
 const defaults = require('lodash.defaults');
 const AWS = require("aws-sdk");
 const s3 = require("./../lib/s3-cached")({
-  // temporarily fill in your own bucket to record tests and place any new file in assets folder
-  // when done restore bucket name and replace bucket name in cassette files
-  bucket: "s3-cached-test-bucket",
+  // Temporarily fill in your own bucket to record tests and place any used files in assets folder.
+  // When done restore bucket name and replace bucket name in cassette files
+  bucket: "dummy-bucket-name",
   s3Options: defaults({
     accessKeyId: AWS.config.credentials.accessKeyId,
     privateAccessKey: AWS.config.credentials.secretAccessKey
