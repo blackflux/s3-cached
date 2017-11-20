@@ -45,7 +45,8 @@
     "nock": "9.1.0",
     "js-gardener": "1.5.4",
     "coveralls": "3.0.0",
-    "semantic-release": "8.2.0"
+    "semantic-release": "8.2.0",
+    "lodash.get": "4.4.2"
   },
   "engines": {
     "node": ">= 6.10.3"
