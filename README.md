@@ -26,6 +26,7 @@ S3 File Access Abstraction providing Memory and Disk Caching Layer. Useful e.g. 
 
 ### Request S3 Files
 
+<!-- eslint-disable import/no-extraneous-dependencies, import/no-unresolved -->
 ```javascript
 const s3 = require("s3-cached")({
   bucket: "YOUR_BUCKET_NAME",
@@ -63,13 +64,7 @@ Specify the Bucket name you want to retrieve data from.
 Type: `object`<br>
 Default: -
 
-Forward options into s3 initialization. E.g.
-```javascript
-{
-  accessKeyId: "YOUR_ACCESS_KEY_ID",
-  secretAccessKey: "YOUR_SECRET_ACCESS_KEY"
-}
-``` 
+Forward options into s3 initialization, i.e. `accessKeyId` and `secretAccessKey`.
 
 ### ttlDefault
 
