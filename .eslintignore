@@ -1,2 +1,2 @@
-test/assets/invalid.json
-test/assets/large.json.gz
+test/files/invalid.json
+test/files/large.json.gz
