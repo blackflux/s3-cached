@@ -46,7 +46,7 @@
     "lodash.get": "4.4.2",
     "js-gardener": "1.10.5",
     "coveralls": "3.0.0",
-    "semantic-release": "8.2.0"
+    "semantic-release": "11.0.2"
   },
   "engines": {
     "node": ">= 6.10.3"
