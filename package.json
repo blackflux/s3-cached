@@ -36,7 +36,7 @@
   "homepage": "https://github.com/simlu/s3-cached#readme",
   "dependencies": {
 
-    "aws-sdk": "2.175.0",
+    "aws-sdk": "2.176.0",
 
 
 
