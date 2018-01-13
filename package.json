@@ -47,7 +47,7 @@
     "js-gardener": "1.10.15",
     "coveralls": "3.0.0",
     "mocha": "4.1.0",
-    "semantic-release": "11.0.2"
+    "semantic-release": "12.2.2"
   },
   "engines": {
     "node": ">= 6.10.3"
