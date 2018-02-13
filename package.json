@@ -46,7 +46,7 @@
     "lodash.get": "4.4.2",
     "js-gardener": "1.11.4",
     "coveralls": "3.0.0",
-    "mocha": "5.0.0",
+    "mocha": "5.0.1",
     "semantic-release": "12.4.1"
   },
   "engines": {
