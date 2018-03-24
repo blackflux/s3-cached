@@ -37,6 +37,18 @@ describe("Testing S3-Cached", () => {
     });
   });
 
+  it("Testing Text", (done) => {
+    nockBack(`large.text_recording.json`, {}, (nockDone) => {
+      s3.getTextObjectCached("large.txt").then((text) => {
+        expect(text).to.match(/^Lorem ipsum dolor/);
+        expect(text).to.match(/lacinia mauris\.\n$/);
+        expect(text).to.contain("condimentum ultricies");
+        nockDone();
+        done();
+      });
+    });
+  });
+
   it("Testing JSON", (done) => {
     nockBack(`large.json_recording.json`, {}, (nockDone) => {
       s3.getJsonObjectCached("large.json").then((json) => {
