@@ -1,0 +1,12 @@
+[ignore]
+<PROJECT_ROOT>/test/files/invalid.json
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
