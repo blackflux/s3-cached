@@ -1,3 +1,4 @@
+const fs = require("fs");
 const path = require("path");
 const expect = require("chai").expect;
 const nockBack = require('nock').back;
@@ -31,6 +32,16 @@ describe("Testing S3-Cached", () => {
     nockBack(`invalid.json_recording.json`, {}, (nockDone) => {
       s3.getJsonObjectCached("invalid.json").catch((err) => {
         expect(err.message).to.equal("Unexpected token \u001f in JSON at position 0");
+        nockDone();
+        done();
+      });
+    });
+  });
+
+  it("Testing Binary", (done) => {
+    nockBack(`large.bin_recording.json`, {}, (nockDone) => {
+      s3.getBinaryObjectCached("large.bin").then((data) => {
+        expect(data).to.deep.equal(fs.readFileSync(path.join(__dirname, "files", "large.bin")));
         nockDone();
         done();
       });
