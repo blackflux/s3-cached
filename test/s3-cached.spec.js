@@ -4,7 +4,7 @@ const expect = require("chai").expect;
 const nockBack = require('nock').back;
 const get = require('lodash.get');
 const AWS = require("aws-sdk");
-const s3 = require("./../lib/s3-cached")({
+const s3 = require("./../src/s3-cached")({
   // Temporarily fill in your own bucket to record tests and place any used files in assets folder.
   // When done restore bucket name and replace bucket name in cassette files
   bucket: "dummy-bucket-name"
