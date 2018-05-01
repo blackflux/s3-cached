@@ -50,7 +50,7 @@
     "nock": "9.2.5",
     "lodash.get": "4.4.2",
     "js-gardener": "1.22.11",
-    "coveralls": "3.0.0",
+    "coveralls": "3.0.1",
     "mocha": "5.1.1",
     "semantic-release": "15.1.8",
     "nyc": "11.7.1",
