@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/simlu/s3-cached#readme",
   "dependencies": {
-    "aws-sdk": "2.250.1",
+    "aws-sdk": "2.251.1",
     "lodash.defaults": "4.2.0",
     "cache-manager": "2.9.0",
     "cache-manager-fs": "1.0.6"
