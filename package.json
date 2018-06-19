@@ -52,7 +52,7 @@
     "js-gardener": "1.22.11",
     "coveralls": "3.0.1",
     "mocha": "5.2.0",
-    "semantic-release": "15.5.5",
+    "semantic-release": "15.6.0",
     "nyc": "11.7.1",
     "babel-cli": "7.0.0-beta.3"
   },
