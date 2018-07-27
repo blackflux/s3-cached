@@ -44,7 +44,7 @@ describe("Testing S3-Cached", () => {
         expect(data).to.deep.equal(fs.readFileSync(path.join(__dirname, "files", "large.bin")));
         nockDone();
         done();
-      });
+      }).catch(done.fail);
     });
   });
 
@@ -56,7 +56,7 @@ describe("Testing S3-Cached", () => {
         expect(text).to.contain("condimentum ultricies");
         nockDone();
         done();
-      });
+      }).catch(done.fail);
     });
   });
 
@@ -67,7 +67,7 @@ describe("Testing S3-Cached", () => {
         expect(json[1].friends[2].name).to.equal("Susanne Alvarez");
         nockDone();
         done();
-      });
+      }).catch(done.fail);
     });
   });
 
@@ -81,7 +81,7 @@ describe("Testing S3-Cached", () => {
         expect(json[1].friends[2].name).to.equal("Susanne Alvarez");
         nockDone();
         done();
-      });
+      }).catch(done.fail);
     });
   });
 });

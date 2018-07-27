@@ -6,12 +6,13 @@
   "scripts": {
     "test": "npm run clean && npm run gardener && npm run test-simple",
     "coveralls": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
-    "semantic-release": "npm run clean-build && npx semantic-release",
+    "semantic-release": "npm run build-artifact && npm run clean-build && npx semantic-release",
     "clean": "rm -rf lib",
     "build": "npx babel src --out-dir lib --source-maps inline --copy-files --include-dotfiles",
     "clean-build": "npm run clean && npm run build",
     "test-simple": "nyc mocha \"./test/**/*.spec.js\"",
-    "gardener": "node gardener"
+    "gardener": "node gardener",
+    "build-artifact": "npm run clean-build && tar -zxvf $(npm pack) && rm *-0.0.0-development.tgz && cd package && tar -zcvf ../release.tar.gz . && cd .. && rm -rf package"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "storage",
     "cloud"
   ],
-  "author": "",
+  "author": "Lukas Siemon",
   "license": "MIT",
   "licenses": [
     {
@@ -40,21 +41,25 @@
   },
   "homepage": "https://github.com/simlu/s3-cached#readme",
   "dependencies": {
-    "aws-sdk": "2.252.1",
+    "aws-sdk": "2.282.1",
     "lodash.defaults": "4.2.0",
     "cache-manager": "2.9.0",
     "cache-manager-fs": "1.0.6"
   },
   "devDependencies": {
     "chai": "4.1.2",
-    "nock": "9.3.3",
+    "nock": "9.4.3",
     "lodash.get": "4.4.2",
-    "js-gardener": "1.22.11",
-    "coveralls": "3.0.1",
+    "js-gardener": "1.30.3",
+    "coveralls": "3.0.2",
     "mocha": "5.2.0",
-    "semantic-release": "15.6.3",
-    "nyc": "11.7.1",
-    "babel-cli": "7.0.0-beta.3"
+    "semantic-release": "15.8.1",
+    "nyc": "12.0.2",
+    "babel-cli": "7.0.0-beta.3",
+    "babel-register": "7.0.0-beta.3",
+    "babel-eslint": "8.2.6",
+    "babel-plugin-transform-flow-comments": "7.0.0-beta.3",
+    "babel-preset-flow": "7.0.0-beta.3"
   },
   "engines": {
     "node": ">= 6.10.3"
