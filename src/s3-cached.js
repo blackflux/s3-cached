@@ -3,6 +3,7 @@ const AWS = require('aws-sdk');
 const cacheManager = require('cache-manager');
 const fsStore = require('cache-manager-fs');
 const defaults = require('lodash.defaults');
+const get = require('lodash.get');
 
 module.exports = (options) => {
   defaults(options, {
@@ -22,6 +23,25 @@ module.exports = (options) => {
   });
   const multiCache = cacheManager.multiCaching([memoryCache, diskCache]);
 
+  const getKeysCached = (
+    prefix = '',
+    ttl = options.ttlDefault,
+    bucket = options.bucket,
+  ) => multiCache.wrap(prefix, async () => {
+    const result = [];
+    let data = null;
+    do {
+      // eslint-disable-next-line no-await-in-loop
+      data = await s3.listObjectsV2({
+        Prefix: prefix,
+        Bucket: bucket,
+        ContinuationToken: get(data, 'NextContinuationToken')
+      }).promise();
+      result.push(...data.Contents);
+    } while (data.IsTruncated);
+    return result;
+  }, { ttl });
+
   const getBinaryObjectCached = (
     key,
     ttl = options.ttlDefault,
@@ -36,6 +56,7 @@ module.exports = (options) => {
   ), { ttl });
 
   return {
+    getKeysCached,
     getBinaryObjectCached,
     getTextObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, ttl, bucket, [
       body => body.toString()

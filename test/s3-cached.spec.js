@@ -84,4 +84,21 @@ describe("Testing S3-Cached", () => {
       }).catch(done.fail);
     });
   });
+
+  it("Testing Key Listing", (done) => {
+    nockBack(`keysList.json.gz_recording.json`, {}, (nockDone) => {
+      s3.getKeysCached().then((r) => {
+        expect(r.length).to.equal(1124);
+        expect(r[0]).to.deep.equal({
+          Key: 'bspl0001.c',
+          LastModified: new Date("2018-08-09T19:11:06.000Z"),
+          ETag: '"d41d8cd98f00b204e9800998ecf8427e"',
+          Size: 0,
+          StorageClass: 'STANDARD'
+        });
+        nockDone();
+        done();
+      }).catch(done.fail);
+    });
+  });
 });
