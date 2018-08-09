@@ -23,11 +23,11 @@ module.exports = (options) => {
   });
   const multiCache = cacheManager.multiCaching([memoryCache, diskCache]);
 
-  const getKeysCached = (
+  const getKeysCached = ({
     prefix = '',
     ttl = options.ttlDefault,
-    bucket = options.bucket,
-  ) => multiCache.wrap(prefix, async () => {
+    bucket = options.bucket
+  } = {}) => multiCache.wrap(prefix, async () => {
     const result = [];
     let data = null;
     do {
@@ -44,9 +44,11 @@ module.exports = (options) => {
 
   const getBinaryObjectCached = (
     key,
-    ttl = options.ttlDefault,
-    bucket = options.bucket,
-    modifications = []
+    {
+      ttl = options.ttlDefault,
+      bucket = options.bucket,
+      modifications = []
+    } = {}
   ) => multiCache.wrap(key, () => [
     data => data.Body,
     ...modifications
@@ -58,15 +60,20 @@ module.exports = (options) => {
   return {
     getKeysCached,
     getBinaryObjectCached,
-    getTextObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, ttl, bucket, [
-      body => body.toString()
-    ]),
-    getJsonObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, ttl, bucket, [
-      body => body.toString(),
-      JSON.parse
-    ]),
-    getDeflatedObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, ttl, bucket, [
-      zlib.gunzipSync
-    ])
+    getTextObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, {
+      ttl,
+      bucket,
+      modifications: [body => body.toString()]
+    }),
+    getJsonObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, {
+      ttl,
+      bucket,
+      modifications: [body => body.toString(), JSON.parse]
+    }),
+    getDeflatedObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, {
+      ttl,
+      bucket,
+      modifications: [zlib.gunzipSync]
+    })
   };
 };
