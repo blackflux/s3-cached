@@ -49,7 +49,7 @@ s3.getJsonObjectCached("large.json").then((json) => {
 - `getTextObjectCached`: retrieve file content as string and return as promise
 - `getJsonObjectCached`: retrieve file content as string, parse as json and return as promise
 - `getDeflatedObjectCached`: retrieve file content, deflate and return as promise
-- `getKeysCached`: retrieve all files in bucket with given prefix
+- `getKeysCached`: retrieve all file names in bucket with given prefix
 
 Note that you can specify the ttl and/or custom bucket on a per file basis by calling 
 e.g. `s3.getJsonObjectCached(FILE_NAME, TTL, BUCKET)`.
