@@ -2,6 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/simlu/s3-cached/master.svg)](https://travis-ci.org/simlu/s3-cached)
 [![Test Coverage](https://img.shields.io/coveralls/simlu/s3-cached/master.svg)](https://coveralls.io/github/simlu/s3-cached?branch=master)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=simlu/s3-cached)](https://dependabot.com)
 [![Dependencies](https://david-dm.org/simlu/s3-cached/status.svg)](https://david-dm.org/simlu/s3-cached)
 [![NPM](https://img.shields.io/npm/v/s3-cached.svg)](https://www.npmjs.com/package/s3-cached)
 [![Downloads](https://img.shields.io/npm/dt/s3-cached.svg)](https://www.npmjs.com/package/s3-cached)

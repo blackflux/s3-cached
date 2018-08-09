@@ -1,5 +1,6 @@
 [ignore]
 <PROJECT_ROOT>/test/files/invalid.json
+.*/node_modules/config-chain/test/broken.json
 
 [include]
 
