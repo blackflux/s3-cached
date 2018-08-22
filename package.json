@@ -41,13 +41,14 @@
   },
   "homepage": "https://github.com/simlu/s3-cached#readme",
   "dependencies": {
-    "lodash.defaults": "4.2.0",
-    "lodash.get": "4.4.2",
+    "aws-sdk-wrap": "1.0.3",
     "cache-manager": "2.9.0",
-    "cache-manager-fs": "1.0.6"
+    "cache-manager-fs": "1.0.6",
+    "lodash.defaults": "4.2.0",
+    "lodash.get": "4.4.2"
   },
   "devDependencies": {
-    "aws-sdk": "2.291.0",
+    "aws-sdk": "2.298.0",
     "babel-cli": "7.0.0-beta.3",
     "babel-eslint": "8.2.6",
     "babel-plugin-transform-flow-comments": "7.0.0-beta.3",
@@ -57,9 +58,9 @@
     "coveralls": "3.0.2",
     "js-gardener": "1.31.1",
     "mocha": "5.2.0",
-    "nock": "9.6.0",
+    "nock": "9.6.1",
     "nyc": "12.0.2",
-    "semantic-release": "15.9.8"
+    "semantic-release": "15.9.9"
   },
   "engines": {
     "node": ">= 6.10.3"

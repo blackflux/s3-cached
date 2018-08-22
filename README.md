@@ -68,7 +68,14 @@ Specify the Bucket name you want to retrieve data from.
 Type: `object`<br>
 Default: -
 
-Forward options into s3 initialization, i.e. `accessKeyId` and `secretAccessKey`.
+Passed into [aws-wrap-sdk](https://github.com/simlu/aws-sdk-wrap) for `AWS.S3()` initialization.
+
+### logger
+
+Type: `logger`<br>
+Default: `null`
+
+Passed into [aws-wrap-sdk](https://github.com/simlu/aws-sdk-wrap).
 
 ### ttlDefault
 

@@ -1,5 +1,5 @@
 const zlib = require('zlib');
-const AWS = require('aws-sdk');
+const AWS = require('aws-sdk-wrap');
 const cacheManager = require('cache-manager');
 const fsStore = require('cache-manager-fs');
 const defaults = require('lodash.defaults');
@@ -10,9 +10,10 @@ module.exports = (options) => {
     ttlDefault: 600, // eventually we invalidate cached data
     diskMaxSize: 469762048, // lambda allows for ~512mb in /tmp directory
     diskTmpDirectory: '/tmp',
-    memoryLimit: 100
+    memoryLimit: 100,
+    logger: null
   });
-  const s3 = new AWS.S3(options.s3Options);
+  const aws = AWS({ config: options.s3Options, logger: options.logger });
   const memoryCache = cacheManager.caching({ store: 'memory', max: options.memoryLimit });
   const diskCache = cacheManager.caching({
     store: fsStore,
@@ -32,11 +33,11 @@ module.exports = (options) => {
     let data = null;
     do {
       // eslint-disable-next-line no-await-in-loop
-      data = await s3.listObjectsV2({
+      data = await aws.call("s3", "listObjectsV2", {
         Prefix: prefix,
         Bucket: bucket,
         ContinuationToken: get(data, 'NextContinuationToken')
-      }).promise();
+      });
       result.push(...data.Contents);
     } while (data.IsTruncated);
     return result;
@@ -54,7 +55,7 @@ module.exports = (options) => {
     ...modifications
   ].reduce(
     (p, c) => p.then(c),
-    s3.getObject({ Bucket: bucket, Key: key }).promise()
+    aws.call("s3", "getObject", { Bucket: bucket, Key: key })
   ), { ttl });
 
   return {
