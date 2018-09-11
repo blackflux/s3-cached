@@ -1,3 +1,4 @@
+const assert = require("assert");
 const zlib = require('zlib');
 const AWS = require('aws-sdk-wrap');
 const cacheManager = require('cache-manager');
@@ -6,6 +7,7 @@ const defaults = require('lodash.defaults');
 const get = require('lodash.get');
 
 module.exports = (options) => {
+  assert(typeof options === "object" && !Array.isArray(options));
   defaults(options, {
     ttlDefault: 600, // eventually we invalidate cached data
     diskMaxSize: 469762048, // lambda allows for ~512mb in /tmp directory
@@ -24,11 +26,13 @@ module.exports = (options) => {
   });
   const multiCache = cacheManager.multiCaching([memoryCache, diskCache]);
 
-  const getKeysCached = ({
-    prefix = '',
+  const getKeysCached = (prefix = '', {
     ttl = options.ttlDefault,
     bucket = options.bucket
   } = {}) => multiCache.wrap(prefix, async () => {
+    assert(typeof prefix === "string");
+    assert(typeof ttl === "number");
+    assert(typeof bucket === "string");
     const result = [];
     let data = null;
     do {
@@ -50,31 +54,49 @@ module.exports = (options) => {
       bucket = options.bucket,
       modifications = []
     } = {}
-  ) => multiCache.wrap(key, () => [
-    data => data.Body,
-    ...modifications
-  ].reduce(
-    (p, c) => p.then(c),
-    aws.call("s3", "getObject", { Bucket: bucket, Key: key })
-  ), { ttl });
+  ) => {
+    assert(typeof key === "string");
+    assert(typeof ttl === "number");
+    assert(typeof bucket === "string");
+    assert(Array.isArray(modifications));
+    return multiCache.wrap(key, () => [
+      data => data.Body,
+      ...modifications
+    ].reduce(
+      (p, c) => p.then(c),
+      aws.call("s3", "getObject", { Bucket: bucket, Key: key })
+    ), { ttl });
+  };
 
   return {
     getKeysCached,
     getBinaryObjectCached,
-    getTextObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, {
-      ttl,
-      bucket,
-      modifications: [body => body.toString()]
-    }),
-    getJsonObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, {
-      ttl,
-      bucket,
-      modifications: [body => body.toString(), JSON.parse]
-    }),
-    getDeflatedObjectCached: (key, ttl, bucket) => getBinaryObjectCached(key, {
-      ttl,
-      bucket,
-      modifications: [zlib.gunzipSync]
-    })
+    getTextObjectCached: (key, opts = {}) => {
+      assert(typeof key === "string");
+      assert(typeof opts === "object" && !Array.isArray(opts));
+      return getBinaryObjectCached(key, {
+        ttl: opts.ttl,
+        bucket: opts.bucket,
+        modifications: [body => body.toString()]
+      });
+    },
+    getJsonObjectCached: (key, opts = {}) => {
+      assert(typeof key === "string");
+      assert(typeof opts === "object" && !Array.isArray(opts));
+      return getBinaryObjectCached(key, {
+        ttl: opts.ttl,
+        bucket: opts.bucket,
+        modifications: [body => body.toString(), JSON.parse]
+      });
+    },
+    getDeflatedObjectCached: (key, opts = {}) => {
+      assert(typeof key === "string");
+      assert(typeof opts === "object" && !Array.isArray(opts));
+      return getBinaryObjectCached(key, {
+        ttl: opts.ttl,
+        bucket: opts.bucket,
+        modifications: [zlib.gunzipSync]
+      });
+    }
   };
 };
