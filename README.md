@@ -52,7 +52,7 @@ s3.getJsonObjectCached("large.json").then((json) => {
 - `getKeysCached`: retrieve all file names in bucket with given prefix
 
 Note that you can specify the ttl and/or custom bucket on a per file basis by calling 
-e.g. `s3.getJsonObjectCached(FILE_NAME, { ttl, bucket })`.
+e.g. `s3.getJsonObjectCached(FILE_NAME, { ttl, bucket })`. For exact method signatures please check the code.
 
 # Options
 
