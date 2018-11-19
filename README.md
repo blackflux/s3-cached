@@ -6,8 +6,8 @@
 [![Dependencies](https://david-dm.org/simlu/s3-cached/status.svg)](https://david-dm.org/simlu/s3-cached)
 [![NPM](https://img.shields.io/npm/v/s3-cached.svg)](https://www.npmjs.com/package/s3-cached)
 [![Downloads](https://img.shields.io/npm/dt/s3-cached.svg)](https://www.npmjs.com/package/s3-cached)
-[![Semantic-Release](https://github.com/simlu/js-gardener/blob/master/assets/icons/semver.svg)](https://github.com/semantic-release/semantic-release)
-[![Gardener](https://github.com/simlu/js-gardener/blob/master/assets/badge.svg)](https://github.com/simlu/js-gardener)
+[![Semantic-Release](https://github.com/blackflux/js-gardener/blob/master/assets/icons/semver.svg)](https://github.com/semantic-release/semantic-release)
+[![Gardener](https://github.com/blackflux/js-gardener/blob/master/assets/badge.svg)](https://github.com/blackflux/js-gardener)
 [![Gitter](https://github.com/simlu/js-gardener/blob/master/assets/icons/gitter.svg)](https://gitter.im/simlu/s3-cached)
 
 S3 File Access Abstraction providing Memory and Disk Caching Layer. Useful e.g. in lambda functions if you want to reduce the amount of s3 access for serving (semi-)static files.
@@ -28,15 +28,15 @@ S3 File Access Abstraction providing Memory and Disk Caching Layer. Useful e.g. 
 
 <!-- eslint-disable import/no-extraneous-dependencies, import/no-unresolved -->
 ```javascript
-const s3 = require("s3-cached")({
-  bucket: "YOUR_BUCKET_NAME",
+const s3 = require('s3-cached')({
+  bucket: 'YOUR_BUCKET_NAME',
   s3Options: {
-    accessKeyId: "YOUR_ACCESS_KEY_ID",
-    secretAccessKey: "YOUR_SECRET_ACCESS_KEY"
+    accessKeyId: 'YOUR_ACCESS_KEY_ID',
+    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY'
   }
 });
 
-s3.getJsonObjectCached("large.json").then((json) => {
+s3.getJsonObjectCached('large.json').then((json) => {
   // do something with the json data
 }).catch((err) => {
   // there has been an error
@@ -77,7 +77,7 @@ Default: `null`
 
 Passed into [aws-wrap-sdk](https://github.com/simlu/aws-sdk-wrap).
 
-### ttlDefault
+### ttl
 
 Type: `integer`<br>
 Default: `600`

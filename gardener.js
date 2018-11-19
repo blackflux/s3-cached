@@ -3,6 +3,6 @@ const gardener = require('js-gardener');
 
 if (require.main === module) {
   gardener({
-    author: "Lukas Siemon"
+    author: 'Lukas Siemon'
   }).catch(() => process.exit(1));
 }

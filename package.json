@@ -43,24 +43,26 @@
   "dependencies": {
     "aws-sdk-wrap": "1.1.1",
     "cache-manager": "2.9.0",
-    "cache-manager-fs": "1.0.6",
+    "cache-manager-fs": "1.0.7",
     "lodash.defaults": "4.2.0",
     "lodash.get": "4.4.2"
   },
   "devDependencies": {
-    "aws-sdk": "2.312.0",
-    "babel-cli": "7.0.0-beta.3",
-    "babel-eslint": "9.0.0",
-    "babel-plugin-transform-flow-comments": "7.0.0-beta.3",
-    "babel-preset-flow": "7.0.0-beta.3",
-    "babel-register": "7.0.0-beta.3",
-    "chai": "4.1.2",
+    "aws-sdk": "2.358.0",
+    "babel-eslint": "10.0.1",
+    "chai": "4.2.0",
     "coveralls": "3.0.2",
-    "js-gardener": "1.31.5",
+    "js-gardener": "1.33.0",
     "mocha": "5.2.0",
-    "nock": "9.6.1",
-    "nyc": "13.0.1",
-    "semantic-release": "15.9.14"
+    "nock": "10.0.2",
+    "nyc": "13.1.0",
+    "semantic-release": "15.12.0",
+    "@babel/register": "7.0.0",
+    "@babel/core": "7.1.6",
+    "@babel/cli": "7.1.5",
+    "@babel/plugin-transform-flow-comments": "7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/preset-flow": "7.0.0"
   },
   "engines": {
     "node": ">= 6.10.3"
@@ -72,7 +74,7 @@
     "aws-sdk": "^2.289.0"
   },
   "nyc": {
-    "tempDirectory": "./coverage/.nyc_output",
+    "tempDir": "./coverage/.nyc_output",
     "report-dir": "./coverage",
     "check-coverage": true,
     "per-file": false,
@@ -95,7 +97,7 @@
       "text-summary"
     ],
     "require": [
-      "babel-register"
+      "@babel/register"
     ],
     "extension": [],
     "cache": true,
