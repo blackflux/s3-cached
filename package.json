@@ -48,7 +48,7 @@
     "lodash.get": "4.4.2"
   },
   "devDependencies": {
-    "aws-sdk": "2.358.0",
+    "aws-sdk": "2.382.0",
     "babel-eslint": "10.0.1",
     "chai": "4.2.0",
     "coveralls": "3.0.2",
