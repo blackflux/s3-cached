@@ -59,9 +59,9 @@ e.g. `s3.getJsonObjectCached(FILE_NAME, { ttl, bucket })`. For exact method sign
 ### bucket
 
 Type: `string`<br>
-*Required*
+Default: `undefined`
 
-Specify the Bucket name you want to retrieve data from.
+Specify the Bucket name you want to retrieve data from. It either has to be defined here or on every request (overwrites).
 
 ### s3Options
 
