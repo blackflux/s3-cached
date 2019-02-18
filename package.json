@@ -41,27 +41,27 @@
   },
   "homepage": "https://github.com/blackflux/s3-cached#readme",
   "dependencies": {
-    "aws-sdk-wrap": "1.1.1",
+    "aws-sdk-wrap": "1.1.3",
     "cache-manager": "2.9.0",
     "cache-manager-fs": "1.0.7",
     "lodash.defaults": "4.2.0",
     "lodash.get": "4.4.2"
   },
   "devDependencies": {
-    "aws-sdk": "2.391.0",
+    "aws-sdk": "2.404.0",
     "babel-eslint": "10.0.1",
     "chai": "4.2.0",
     "coveralls": "3.0.2",
-    "js-gardener": "1.34.2",
+    "js-gardener": "1.35.0",
     "mocha": "5.2.0",
     "nock": "10.0.6",
-    "nyc": "13.1.0",
+    "nyc": "13.3.0",
     "semantic-release": "15.13.3",
     "@babel/register": "7.0.0",
-    "@babel/core": "7.2.2",
+    "@babel/core": "7.3.3",
     "@babel/cli": "7.2.3",
     "@babel/plugin-transform-flow-comments": "7.2.0",
-    "@babel/plugin-proposal-object-rest-spread": "7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.3.2",
     "@babel/preset-flow": "7.0.0"
   },
   "engines": {
