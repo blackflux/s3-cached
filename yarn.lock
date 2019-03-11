@@ -3549,10 +3549,10 @@ jmespath@0.15.0:
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
   integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
 
-js-gardener@1.37.10:
-  version "1.37.10"
-  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-1.37.10.tgz#0978860754ac3ffe74e414cec6b80a0e51db97a0"
-  integrity sha512-LDJ0qmJYJoW4og1D7YVTbvIu0tZxC9OGPmjC4KXBISR/ilEDMWu6Fb5DAVk0UeS9BHlVOZnpnijBdzkIk8bPew==
+js-gardener@1.38.0:
+  version "1.38.0"
+  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-1.38.0.tgz#a911d5526cf9cd81036fe866a59efd5d8ce7c90e"
+  integrity sha512-weHbmCabhtD6QqDCn6XM8EJmDKOPLn2VuzR1utTUypKLLofJduLKmWdHI0FytvzQL7kkX9PDLZNtKgf4K1yoeg==
   dependencies:
     chalk "2.4.2"
     eslint "5.15.1"
