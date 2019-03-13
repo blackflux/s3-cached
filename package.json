@@ -48,11 +48,11 @@
     "lodash.get": "4.4.2"
   },
   "devDependencies": {
-    "aws-sdk": "2.420.0",
+    "aws-sdk": "2.421.0",
     "babel-eslint": "10.0.1",
     "chai": "4.2.0",
     "coveralls": "3.0.3",
-    "js-gardener": "1.38.1",
+    "js-gardener": "1.38.2",
     "mocha": "6.0.2",
     "nock": "10.0.6",
     "nyc": "13.3.0",

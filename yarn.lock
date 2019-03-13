@@ -643,10 +643,10 @@ aws-sdk-wrap@1.1.6:
   dependencies:
     lodash.get "4.4.2"
 
-aws-sdk@2.420.0:
-  version "2.420.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.420.0.tgz#b341c805b6206014fb5caebf2c5d4697d3de373d"
-  integrity sha512-lpkGYiJ3dvZ0e4OUE9S3eGuMGCdtG9f04wLwtvaoqSvoPb4PNgCFv42EwBeEkKr6VcnofwcRpqPpzN+cSLFBzQ==
+aws-sdk@2.421.0:
+  version "2.421.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.421.0.tgz#39c8066b103ef01849f7da587cec40cc874f2fbc"
+  integrity sha512-N0vY++NJc0MV96pu4vcnJIe8MXNKgcNLxlRPDALlIbaYHSC+btJSAdXpC5+4uFFF30uWCaIM1WiX8O/9Obg5oA==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -3549,10 +3549,10 @@ jmespath@0.15.0:
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
   integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
 
-js-gardener@1.38.1:
-  version "1.38.1"
-  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-1.38.1.tgz#db9c5f44dfe25312ab1784703bc112bdb648db9e"
-  integrity sha512-lbjoM4aRrj26E4DWpCQCnvkw7K6HLU6r8fnlTz/GKxE/MwD7PWH6Yam5mKwvwXb35jT8nT4eqBaLZhVQMjrIXw==
+js-gardener@1.38.2:
+  version "1.38.2"
+  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-1.38.2.tgz#5986df5d1f722765d7fe439ff19b611a5726e233"
+  integrity sha512-Bd/dlqM2OvZat7sbCZxC1TNf2pa4TaAZa0wGj4X2wcZZZvKviJ4DRd6lxMwOKNgEJVPhYWJhkY58YEcfaE6I3w==
   dependencies:
     chalk "2.4.2"
     eslint "5.15.1"
