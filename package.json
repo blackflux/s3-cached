@@ -53,7 +53,7 @@
     "@babel/register": "7.4.0",
     "@blackflux/eslint-plugin-rules": "1.0.8",
     "@blackflux/robo-config-plugin": "1.7.6",
-    "aws-sdk": "2.443.0",
+    "aws-sdk": "2.444.0",
     "babel-eslint": "10.0.1",
     "chai": "4.2.0",
     "coveralls": "3.0.3",
