@@ -42,7 +42,7 @@ module.exports = (options) => {
     let data = null;
     do {
       // eslint-disable-next-line no-await-in-loop
-      data = await aws.call('s3', 'listObjectsV2', {
+      data = await aws.call('s3:listObjectsV2', {
         Prefix: prefix,
         Bucket: bucket,
         ContinuationToken: get(data, 'NextContinuationToken')
@@ -69,7 +69,7 @@ module.exports = (options) => {
       ...modifications
     ].reduce(
       (p, c) => p.then(c),
-      aws.call('s3', 'getObject', { Bucket: bucket, Key: key })
+      aws.call('s3:getObject', { Bucket: bucket, Key: key })
     ), { ttl });
   };
 
