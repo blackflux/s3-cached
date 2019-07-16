@@ -56,7 +56,7 @@
     "aws-sdk": "2.493.0",
     "babel-eslint": "10.0.2",
     "chai": "4.2.0",
-    "coveralls": "3.0.4",
+    "coveralls": "3.0.5",
     "eslint": "6.0.1",
     "js-gardener": "2.0.43",
     "mocha": "6.1.4",
