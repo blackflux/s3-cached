@@ -717,10 +717,10 @@ aws-sdk-wrap@3.0.1:
   dependencies:
     lodash.get "4.4.2"
 
-aws-sdk@2.489.0:
-  version "2.489.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.489.0.tgz#5ca376546dd3e912febf3114d2bcfa4d82c5584a"
-  integrity sha512-P85rLUWpO2DAG/ZQoOscNiwTKY4LgWNCHarw7RACGt0vOGiMkuKL0JN+FvurcmDEBj0xRUXsKDMfwWHDFhA2Jw==
+aws-sdk@2.493.0:
+  version "2.493.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.493.0.tgz#2526208efc0fff91529c41c1d9f5cd15cdfcc937"
+  integrity sha512-xLNpjiNgLZoXqwmLQ+czP3UQzeRgsutpG1KGfVUaj/3giqEElpn0wYkwhkJt4Glm9xf3jgzAdbFEDYM7u+Llxg==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
