@@ -42,7 +42,7 @@
   "dependencies": {
     "aws-sdk-wrap": "3.0.1",
     "cache-manager": "2.9.1",
-    "cache-manager-fs": "1.0.7",
+    "cache-manager-fs": "1.0.8",
     "lodash.defaults": "4.2.0",
     "lodash.get": "4.4.2"
   },

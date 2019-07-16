@@ -1004,10 +1004,10 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
-cache-manager-fs@1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/cache-manager-fs/-/cache-manager-fs-1.0.7.tgz#0f2c4af1eb6c071715ed92f1f240c31a4d5e5166"
-  integrity sha512-Pa0un3m8Toqu5Y38WODTRJdg8/6FTuY3rZ+jzzXPVg8tcIzb+us9m9FI0nuRAnzLTmHf3SrMd84Szdfd1Avv7w==
+cache-manager-fs@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/cache-manager-fs/-/cache-manager-fs-1.0.8.tgz#30d766cc10a4c80b988ad2144977bb279034a69c"
+  integrity sha512-Rrvd5N5DC9Gh6SPSB9A8f/FfPOuHkDL1ig+oSut8iAcYPda8xHqf9OEr3v4vKNYI3svYSoZ+uBqDJctLMRvqiA==
   dependencies:
     async "^1.4.2"
     cache-manager "^1.1.0"
