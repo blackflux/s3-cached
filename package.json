@@ -51,7 +51,7 @@
     "@babel/core": "7.5.4",
     "@babel/plugin-proposal-object-rest-spread": "7.5.4",
     "@babel/register": "7.4.4",
-    "@blackflux/eslint-plugin-rules": "1.0.21",
+    "@blackflux/eslint-plugin-rules": "1.0.22",
     "@blackflux/robo-config-plugin": "2.0.1",
     "aws-sdk": "2.493.0",
     "babel-eslint": "10.0.2",
