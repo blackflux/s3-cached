@@ -11,7 +11,13 @@
     "test": "npm run clean && npm run gardener && npm run test-simple",
     "coveralls": "node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
     "semantic-release": "npm run build-clean && npx semantic-release",
-    "gardener": "node gardener"
+    "gardener": "node gardener",
+    "docker": "docker run -u`id -u`:`id -g` -v $(pwd):/user/project -v ~/.aws:/user/.aws -v ~/.npmrc:/user/.npmrc -w /user/project -it --entrypoint /bin/bash",
+    "yu": "yarn upgrade --latest --force",
+    "yi": "yarn install --frozen-lockfile",
+    "t": "yarn test",
+    "ts": "yarn run test-simple",
+    "tsv": "yarn run test-simple --verbose"
   },
   "repository": {
     "type": "git",
@@ -35,9 +41,7 @@
       "url": "https://github.com/blackflux/s3-cached/blob/master/LICENSE"
     }
   ],
-  "bugs": {
-    "url": "https://github.com/blackflux/s3-cached/issues"
-  },
+  "bugs": {"url": "https://github.com/blackflux/s3-cached/issues"},
   "homepage": "https://github.com/blackflux/s3-cached#readme",
   "dependencies": {
     "aws-sdk-wrap": "3.0.2",
@@ -52,27 +56,21 @@
     "@babel/plugin-proposal-object-rest-spread": "7.5.5",
     "@babel/register": "7.5.5",
     "@blackflux/eslint-plugin-rules": "1.0.23",
-    "@blackflux/robo-config-plugin": "2.0.1",
+    "@blackflux/robo-config-plugin": "2.1.3",
     "aws-sdk": "2.496.0",
     "babel-eslint": "10.0.2",
     "chai": "4.2.0",
     "coveralls": "3.0.5",
-    "eslint": "6.0.1",
-    "js-gardener": "2.0.51",
+    "eslint": "6.1.0",
+    "js-gardener": "2.0.53",
     "mocha": "6.2.0",
     "nock": "10.0.6",
     "nyc": "14.1.1",
     "semantic-release": "15.13.18"
   },
-  "engines": {
-    "node": ">= 6.10.3"
-  },
-  "files": [
-    "lib"
-  ],
-  "peerDependencies": {
-    "aws-sdk": "^2.289.0"
-  },
+  "engines": {"node": ">= 6.10.3"},
+  "files": ["lib"],
+  "peerDependencies": {"aws-sdk": "^2.289.0"},
   "nyc": {
     "tempDir": "./coverage/.nyc_output",
     "report-dir": "./coverage",
@@ -82,22 +80,10 @@
     "statements": 100,
     "functions": 100,
     "branches": 100,
-    "include": [
-      "**/*.js"
-    ],
-    "exclude": [
-      "gardener.js",
-      "node_modules/*",
-      "coverage/*",
-      "lib/*"
-    ],
-    "reporter": [
-      "lcov",
-      "text-summary"
-    ],
-    "require": [
-      "@babel/register"
-    ],
+    "include": ["**/*.js"],
+    "exclude": ["gardener.js", "node_modules/*", "coverage/*", "lib/*"],
+    "reporter": ["lcov", "text-summary"],
+    "require": ["@babel/register"],
     "extension": [],
     "cache": true,
     "all": true,
