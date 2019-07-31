@@ -717,10 +717,10 @@ aws-sdk-wrap@3.0.3:
   dependencies:
     lodash.get "4.4.2"
 
-aws-sdk@2.502.0:
-  version "2.502.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.502.0.tgz#b3192f82389db982605462c8394cc3fa8c475b3e"
-  integrity sha512-VHFdbnJLuzON/35qE4x33PwzWFxAR/0A1wCIvc3sfOVisiGFuvBhQKC24uBlvFMrdPDnrL+8wKCHwfICgCqZtw==
+aws-sdk@2.503.0:
+  version "2.503.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.503.0.tgz#983b8c03aa919060a81127cb9d94fbb1667f4cf2"
+  integrity sha512-DPwRxhPYCGNvKL9rUhpAoOVpMRyISbVMlXykLQknYo7wyOI+jYcyA7t8H7IFPAqj4ZG+R+Au9tO/KT4im+2gbg==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -4330,10 +4330,10 @@ marked-terminal@^3.2.0:
     node-emoji "^1.4.1"
     supports-hyperlinks "^1.0.1"
 
-marked@^0.6.0:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.6.3.tgz#79babad78af638ba4d522a9e715cdfdd2429e946"
-  integrity sha512-Fqa7eq+UaxfMriqzYLayfqAE40WN03jf+zHjT18/uXNuzjq3TY0XTbrAoPeqSJrAmPz11VuUA+kBPYOhHt9oOQ==
+marked@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.7.0.tgz#b64201f051d271b1edc10a04d1ae9b74bb8e5c0e"
+  integrity sha512-c+yYdCZJQrsRjTPhUx7VKkApw9bwDkNbHUKo1ovgcfDjb2kc8rLuRbIFyXL5WOEUwzSSKo3IXpph2K6DqB/KZg==
 
 meant@~1.0.1:
   version "1.0.1"
@@ -6375,10 +6375,10 @@ sax@>=0.6.0, sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@15.13.18:
-  version "15.13.18"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.18.tgz#72e284c6f7cb7817e1aaaa0a9d73600a9447d146"
-  integrity sha512-JtfdrhF1zRm91nJH/Rg3taftbWGwktJqqrJJdbmZGKYx63cfC4PoaS0jxRifGJUdmmgW/Kxz8f5bhtB+p1bu8A==
+semantic-release@15.13.19:
+  version "15.13.19"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.19.tgz#d1d05b3516fb8701d81f4e6b9be42bafffef13cb"
+  integrity sha512-6eqqAmzGaJWgP5R5IkWIQK9is+cWUp/A+pwzxf/YaG1hJv1eD25klUP7Y0fedsPOxxI8eLuDUVlEs7U8SOlK0Q==
   dependencies:
     "@semantic-release/commit-analyzer" "^6.1.0"
     "@semantic-release/error" "^2.2.0"
@@ -6397,7 +6397,7 @@ semantic-release@15.13.18:
     hook-std "^2.0.0"
     hosted-git-info "^2.7.1"
     lodash "^4.17.4"
-    marked "^0.6.0"
+    marked "^0.7.0"
     marked-terminal "^3.2.0"
     p-locate "^4.0.0"
     p-reduce "^2.0.0"
