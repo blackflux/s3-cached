@@ -66,7 +66,7 @@
     "mocha": "6.2.0",
     "nock": "10.0.6",
     "nyc": "14.1.1",
-    "semantic-release": "15.13.18"
+    "semantic-release": "15.13.19"
   },
   "engines": {"node": ">= 6.10.3"},
   "files": ["lib"],
