@@ -41,7 +41,9 @@
       "url": "https://github.com/blackflux/s3-cached/blob/master/LICENSE"
     }
   ],
-  "bugs": {"url": "https://github.com/blackflux/s3-cached/issues"},
+  "bugs": {
+    "url": "https://github.com/blackflux/s3-cached/issues"
+  },
   "homepage": "https://github.com/blackflux/s3-cached#readme",
   "dependencies": {
     "aws-sdk-wrap": "3.0.3",
@@ -55,8 +57,8 @@
     "@babel/core": "7.5.5",
     "@babel/plugin-proposal-object-rest-spread": "7.5.5",
     "@babel/register": "7.5.5",
-    "@blackflux/eslint-plugin-rules": "1.0.26",
-    "@blackflux/robo-config-plugin": "2.2.3",
+    "@blackflux/eslint-plugin-rules": "1.1.0",
+    "@blackflux/robo-config-plugin": "2.3.0",
     "aws-sdk": "2.503.0",
     "babel-eslint": "10.0.2",
     "chai": "4.2.0",
@@ -68,9 +70,15 @@
     "nyc": "14.1.1",
     "semantic-release": "15.13.19"
   },
-  "engines": {"node": ">= 6.10.3"},
-  "files": ["lib"],
-  "peerDependencies": {"aws-sdk": "^2.289.0"},
+  "engines": {
+    "node": ">= 6.10.3"
+  },
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "aws-sdk": "^2.289.0"
+  },
   "nyc": {
     "tempDir": "./coverage/.nyc_output",
     "report-dir": "./coverage",
@@ -80,10 +88,22 @@
     "statements": 100,
     "functions": 100,
     "branches": 100,
-    "include": ["**/*.js"],
-    "exclude": ["gardener.js", "node_modules/*", "coverage/*", "lib/*"],
-    "reporter": ["lcov", "text-summary"],
-    "require": ["@babel/register"],
+    "include": [
+      "**/*.js"
+    ],
+    "exclude": [
+      "gardener.js",
+      "node_modules/*",
+      "coverage/*",
+      "lib/*"
+    ],
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ],
+    "require": [
+      "@babel/register"
+    ],
     "extension": [],
     "cache": true,
     "all": true,
