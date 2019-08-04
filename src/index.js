@@ -7,7 +7,7 @@ const defaults = require('lodash.defaults');
 const get = require('lodash.get');
 
 module.exports = (options) => {
-  assert(typeof options === 'object' && !Array.isArray(options));
+  assert(options instanceof Object && !Array.isArray(options));
   assert(options.ttlDefault === undefined, 'Please use ttl instead.');
   defaults(options, {
     ttl: 600, // eventually we invalidate cached data
@@ -78,7 +78,7 @@ module.exports = (options) => {
     getBinaryObjectCached,
     getTextObjectCached: (key, opts = {}) => {
       assert(typeof key === 'string');
-      assert(typeof opts === 'object' && !Array.isArray(opts));
+      assert(opts instanceof Object && !Array.isArray(opts));
       return getBinaryObjectCached(key, {
         ttl: opts.ttl,
         bucket: opts.bucket,
@@ -87,7 +87,7 @@ module.exports = (options) => {
     },
     getJsonObjectCached: (key, opts = {}) => {
       assert(typeof key === 'string');
-      assert(typeof opts === 'object' && !Array.isArray(opts));
+      assert(opts instanceof Object && !Array.isArray(opts));
       return getBinaryObjectCached(key, {
         ttl: opts.ttl,
         bucket: opts.bucket,
@@ -96,7 +96,7 @@ module.exports = (options) => {
     },
     getDeflatedObjectCached: (key, opts = {}) => {
       assert(typeof key === 'string');
-      assert(typeof opts === 'object' && !Array.isArray(opts));
+      assert(opts instanceof Object && !Array.isArray(opts));
       return getBinaryObjectCached(key, {
         ttl: opts.ttl,
         bucket: opts.bucket,
