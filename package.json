@@ -64,7 +64,7 @@
     "chai": "4.2.0",
     "coveralls": "3.0.5",
     "eslint": "6.1.0",
-    "js-gardener": "2.0.57",
+    "js-gardener": "2.0.58",
     "mocha": "6.2.0",
     "nock": "10.0.6",
     "nyc": "14.1.1",
