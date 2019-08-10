@@ -65,7 +65,7 @@ module.exports = (options) => {
     assert(typeof bucket === 'string');
     assert(Array.isArray(modifications));
     return multiCacheWrap(key, () => [
-      data => data.Body,
+      (data) => data.Body,
       ...modifications
     ].reduce(
       (p, c) => p.then(c),
@@ -82,7 +82,7 @@ module.exports = (options) => {
       return getBinaryObjectCached(key, {
         ttl: opts.ttl,
         bucket: opts.bucket,
-        modifications: [body => body.toString()]
+        modifications: [(body) => body.toString()]
       });
     },
     getJsonObjectCached: (key, opts = {}) => {
@@ -91,7 +91,7 @@ module.exports = (options) => {
       return getBinaryObjectCached(key, {
         ttl: opts.ttl,
         bucket: opts.bucket,
-        modifications: [body => body.toString(), JSON.parse]
+        modifications: [(body) => body.toString(), JSON.parse]
       });
     },
     getDeflatedObjectCached: (key, opts = {}) => {
