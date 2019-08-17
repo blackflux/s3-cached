@@ -10,6 +10,10 @@ describe('Testing S3-Cached', { useNock: true }, () => {
     s3Cached = S3Cached({ bucket: process.env.S3_BUCKET_NAME });
   });
 
+  afterEach(async () => {
+    await s3Cached.resetCache();
+  });
+
   it('Testing JSON Not Found', async () => {
     try {
       await s3Cached.getJsonObjectCached('unknown-file.json');
@@ -61,5 +65,18 @@ describe('Testing S3-Cached', { useNock: true }, () => {
       Size: 0,
       StorageClass: 'STANDARD'
     });
+  });
+
+  it('Test Response is Cached', async () => {
+    // (!) cassette has one request
+    await s3Cached.getTextObjectCached('large.txt');
+    await s3Cached.getTextObjectCached('large.txt');
+  });
+
+  it('Test Cache Reset', async () => {
+    // (!) cassette has two requests
+    await s3Cached.getTextObjectCached('large.txt');
+    await s3Cached.resetCache();
+    await s3Cached.getTextObjectCached('large.txt');
   });
 });

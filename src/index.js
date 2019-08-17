@@ -102,6 +102,9 @@ module.exports = (options) => {
         bucket: opts.bucket,
         modifications: [zlib.gunzipSync]
       });
+    },
+    resetCache: async () => {
+      await new Promise(multiCache.reset);
     }
   };
 };
