@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const expect = require('chai').expect;
 const { describe } = require('node-tdd');
-const S3Cached = require('./../src/index');
+const S3Cached = require('../src/index');
 
 describe('Testing S3-Cached', { useNock: true }, () => {
   let s3Cached;
