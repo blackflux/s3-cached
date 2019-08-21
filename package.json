@@ -72,7 +72,7 @@
     "eslint-plugin-mocha": "6.0.0",
     "js-gardener": "2.0.76",
     "mocha": "6.2.0",
-    "node-tdd": "2.0.3",
+    "node-tdd": "2.0.4",
     "nyc": "14.1.1",
     "semantic-release": "15.13.21"
   },
