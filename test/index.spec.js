@@ -9,25 +9,18 @@ describe('Testing S3-Cached', { useNock: true }, () => {
   before(() => {
     s3Cached = S3Cached({ bucket: process.env.S3_BUCKET_NAME });
   });
-
   afterEach(async () => {
     await s3Cached.resetCache();
   });
 
-  it('Testing JSON Not Found', async () => {
-    try {
-      await s3Cached.getJsonObjectCached('unknown-file.json');
-    } catch (e) {
-      expect(['The specified key does not exist.', 'Access Denied']).to.contain(e.message);
-    }
+  it('Testing JSON Not Found', async ({ capture }) => {
+    const e = await capture(() => s3Cached.getJsonObjectCached('unknown-file.json'));
+    expect(['The specified key does not exist.', 'Access Denied']).to.contain(e.message);
   });
 
-  it('Testing Invalid JSON', async () => {
-    try {
-      await s3Cached.getJsonObjectCached('invalid.json');
-    } catch (e) {
-      expect(e.message).to.equal('Unexpected token \u001f in JSON at position 0');
-    }
+  it('Testing Invalid JSON', async ({ capture }) => {
+    const e = await capture(() => s3Cached.getJsonObjectCached('invalid.json'));
+    expect(e.message).to.equal('Unexpected token \u001f in JSON at position 0');
   });
 
   it('Testing Binary', async () => {
