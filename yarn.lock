@@ -4727,17 +4727,17 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node-tdd@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.5.0.tgz#3e71df00f452b271adc11e11fddac48d46e57fd6"
-  integrity sha512-rJqbcD+MrFXgwZUppJOVu89W4mS2eW+xT7SoPBWRA7p5i3ZA7QcOigKrNzdU1JIUzyw/LlqlGoQnSEHUpJ0F+w==
+node-tdd@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.5.1.tgz#a1d04d6928fc8133372e9cdc2bc88b81801c660e"
+  integrity sha512-dEENz4vUZ3UiRRlKx/FepWV73hUgCZeCUyZAMmrgkbApBVhL+RmFuTT7R7D1NjOQ28jI8N/L3dZi2teXNOuwdg==
   dependencies:
     "@hapi/joi" "15.1.1"
     callsites "3.1.0"
     joi-strict "1.0.9"
     lodash.get "4.4.2"
     nock "11.3.2"
-    smart-fs "1.9.10"
+    smart-fs "1.9.11"
     timekeeper "2.2.0"
     tmp "0.1.0"
 
@@ -5109,6 +5109,11 @@ object-align@1.0.6:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/object-align/-/object-align-1.0.6.tgz#a81a9e1c18976b7fec0cbbb21c5d7fda06c9b83d"
   integrity sha512-VO95ZaWpvfvnh1tYM9Hs67jybbOZEYElQ86wIRsBXcd5y3PM4UbYZaBYGRHsWzvFVr4K5Pn5wE9YQtboUy7bPg==
+
+object-align@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/object-align/-/object-align-1.0.7.tgz#2a170cfdd34fc089cf8b7184b4ec09bc4a50f3c0"
+  integrity sha512-iyfxri2SSIJ5jvaIqDFiXkkyRGjyvaX/jAOffBbGHCEsHHmWr1hT1avhOC5EAsj2ZhEC9gFhibb7O4E1SM9VyA==
 
 object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.1"
@@ -6553,6 +6558,19 @@ smart-fs@1.9.10:
     xml-js "1.6.11"
     yaml-boost "1.9.14"
 
+smart-fs@1.9.11:
+  version "1.9.11"
+  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.9.11.tgz#5e95b397078d5db1f4167338bf360b54f2e99dca"
+  integrity sha512-BSCaUQ+HUPT1FM2t5Em8OKfGruOXeyWX1WOXJCVU4HNH01+iLc6EJHPACpHvlASKJ0T8bI5q6DAxzriWWRplzw==
+  dependencies:
+    fs-extra "8.1.0"
+    json-stringify-pretty-compact "2.0.0"
+    lodash.clonedeep "4.5.0"
+    lodash.isequal "4.5.0"
+    object-align "1.0.7"
+    xml-js "1.6.11"
+    yaml-boost "1.9.15"
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -7661,6 +7679,16 @@ yaml-boost@1.9.14:
   version "1.9.14"
   resolved "https://registry.yarnpkg.com/yaml-boost/-/yaml-boost-1.9.14.tgz#c2e2c62c61b196f5a2453cb55d98286c48c31d62"
   integrity sha512-MCDiptbbmfXHzetpZbrC/F1SKcz6CfDPz91IPPv/NX6DjAhlNmE2aYkWYGF3ssU/wC+triVqdkITn15JpyL0Vw==
+  dependencies:
+    js-yaml "3.13.1"
+    lodash.get "4.4.2"
+    lodash.mergewith "4.6.2"
+    lodash.set "4.3.2"
+
+yaml-boost@1.9.15:
+  version "1.9.15"
+  resolved "https://registry.yarnpkg.com/yaml-boost/-/yaml-boost-1.9.15.tgz#8698cda859e53c77356f07eb34614a9d5f7a5f36"
+  integrity sha512-qaOJltUlcR3+hevjMQh903eaUARIN3QFEYUldSpqEerfPwcqtH2/J3qPMBvw1rxjHuh6PfHPB6nuFZS13c183w==
   dependencies:
     js-yaml "3.13.1"
     lodash.get "4.4.2"
