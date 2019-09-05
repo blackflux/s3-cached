@@ -705,11 +705,12 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.2.1.tgz#d992d842c7868c3f4119b49eaeff95a3a3ecc75b"
-  integrity sha512-pNdChWJjgqdNe9qY2onGXaVdrz0WZI4Fyv/J3ibRpVjtyjr+djZYS/B9+0nn4tDml/z26+fPHOuJcyCkl7Hp/Q==
+aws-sdk-wrap@3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.2.2.tgz#e1f9816b1d233ea1b9fcdf8ec33a1659a3e630cc"
+  integrity sha512-juW44jUr+4Q8AZSDJ4qpsN8uk/4YZYLyX4JxmAWt5p1TvnO8ap0Be8zwZGPzsozp3Yh4+sVI93uKZ5/71hj+0g==
   dependencies:
+    joi-strict "1.0.9"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
     object-hash "1.3.1"
