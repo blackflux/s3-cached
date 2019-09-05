@@ -168,12 +168,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@blackflux/eslint-plugin-rules@1.3.7":
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.7.tgz#19332133f6cd3dd55c49f30431d457b285038216"
-  integrity sha512-8/JxeiUamBnawppQRan1gtKczeW1AxgBxlha+jjOvqW6kKdkoxUGNWXFm+nPWvWmDoEwMSVX6lL76OdOiqmtEg==
+"@blackflux/eslint-plugin-rules@1.3.8":
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.8.tgz#4b81b2207fe8d6bbdb7f72dba9e09f794b72c83f"
+  integrity sha512-aMh3tJrMJwFnY+iLOSPKjsITuOFRvnQ+i6bv+b0wK8rC3+CnwM9YzV5RlwtR0INQLp751sC2iijdtvvia2fehw==
   dependencies:
-    smart-fs "1.9.10"
+    smart-fs "1.9.11"
 
 "@blackflux/robo-config-plugin@2.6.1":
   version "2.6.1"
