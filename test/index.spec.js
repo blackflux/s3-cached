@@ -13,6 +13,18 @@ describe('Testing S3-Cached', { useNock: true }, () => {
     await s3Cached.resetCache();
   });
 
+  it('Testing S3Cached exports', () => {
+    expect(Object.keys(s3Cached)).to.deep.equal([
+      'aws',
+      'getKeysCached',
+      'getBinaryObjectCached',
+      'getTextObjectCached',
+      'getJsonObjectCached',
+      'getDeflatedObjectCached',
+      'resetCache'
+    ]);
+  });
+
   it('Testing JSON Not Found', async ({ capture }) => {
     const e = await capture(() => s3Cached.getJsonObjectCached('unknown-file.json'));
     expect(['The specified key does not exist.', 'Access Denied']).to.contain(e.message);
