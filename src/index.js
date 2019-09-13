@@ -74,6 +74,7 @@ module.exports = (options) => {
   };
 
   return {
+    awsSdkWrap: aws,
     getKeysCached,
     getBinaryObjectCached,
     getTextObjectCached: (key, opts = {}) => {
