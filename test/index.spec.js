@@ -15,6 +15,7 @@ describe('Testing S3-Cached', { useNock: true }, () => {
 
   it('Testing S3Cached exports', () => {
     expect(Object.keys(s3Cached)).to.deep.equal([
+      'aws',
       'getKeysCached',
       'getBinaryObjectCached',
       'getTextObjectCached',

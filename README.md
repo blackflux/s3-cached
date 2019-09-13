@@ -55,7 +55,7 @@ e.g. `s3.getJsonObjectCached(FILE_NAME, { ttl, bucket })`. For exact method sign
 
 ## Other Function / Exports
 
-- `resetCache`: Reset everything in cache
+- `resetCache()`: Reset everything in cache
 - `aws`: The underlying [aws-sdk-wrap](https://www.npmjs.com/package/aws-sdk-wrap) instance
 
 # Options
