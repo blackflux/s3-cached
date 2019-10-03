@@ -38,18 +38,7 @@ module.exports = (options) => {
     assert(typeof prefix === 'string');
     assert(typeof ttl === 'number');
     assert(typeof bucket === 'string');
-    const result = [];
-    let data = null;
-    do {
-      // eslint-disable-next-line no-await-in-loop
-      data = await aws.call('s3:listObjectsV2', {
-        Prefix: prefix,
-        Bucket: bucket,
-        ContinuationToken: get(data, 'NextContinuationToken')
-      });
-      result.push(...data.Contents);
-    } while (data.IsTruncated);
-    return result;
+    return aws.s3.listObjects({ bucket, prefix });
   }, { ttl });
 
   const getBinaryObjectCached = (
