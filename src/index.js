@@ -31,11 +31,11 @@ module.exports = (options) => {
     return multiCache.wrap(...args);
   };
 
-  const getKeysCached = (prefix = '', {
+  const getKeysCached = (prefix = undefined, {
     ttl = options.ttl,
     bucket = options.bucket
-  } = {}) => multiCacheWrap(prefix, async () => {
-    assert(typeof prefix === 'string');
+  } = {}) => multiCacheWrap(prefix || '', async () => {
+    assert(typeof prefix === 'string' || prefix === undefined);
     assert(typeof ttl === 'number');
     assert(typeof bucket === 'string');
     return aws.s3.listObjects({ bucket, prefix });
