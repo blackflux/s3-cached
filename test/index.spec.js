@@ -20,7 +20,7 @@ describe('Testing S3-Cached', { useNock: true }, () => {
       'getBinaryObjectCached',
       'getTextObjectCached',
       'getJsonObjectCached',
-      'getDeflatedObjectCached',
+      'getGzipObjectCached',
       'resetCache'
     ]);
   });
@@ -54,7 +54,7 @@ describe('Testing S3-Cached', { useNock: true }, () => {
   });
 
   it('Testing GZIP', async () => {
-    const r = await s3Cached.getDeflatedObjectCached('large.json.gz')
+    const r = await s3Cached.getGzipObjectCached('large.json.gz')
       .then((s) => JSON.parse(s));
     expect(r[0].tags).to.include('anim');
     expect(r[1].friends[2].name).to.equal('Susanne Alvarez');
