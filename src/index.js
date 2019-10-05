@@ -84,7 +84,7 @@ module.exports = (options) => {
         modifications: [(body) => body.toString(), JSON.parse]
       });
     },
-    getDeflatedObjectCached: (key, opts = {}) => {
+    getGzipObjectCached: (key, opts = {}) => {
       assert(typeof key === 'string');
       assert(opts instanceof Object && !Array.isArray(opts));
       return getBinaryObjectCached(key, {
