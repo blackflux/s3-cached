@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/blackflux/s3-cached#readme",
   "dependencies": {
-    "aws-sdk-wrap": "3.5.7",
+    "aws-sdk-wrap": "3.5.8",
     "cache-manager": "2.10.0",
     "cache-manager-fs": "1.0.8",
     "lodash.defaults": "4.2.0",
@@ -71,7 +71,7 @@
     "eslint-plugin-mocha": "6.1.1",
     "js-gardener": "2.0.104",
     "mocha": "6.2.1",
-    "node-tdd": "2.5.14",
+    "node-tdd": "2.5.15",
     "nyc": "14.1.1",
     "semantic-release": "15.13.24"
   },
