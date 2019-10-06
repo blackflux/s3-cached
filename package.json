@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/blackflux/s3-cached#readme",
   "dependencies": {
-    "aws-sdk-wrap": "3.5.6",
+    "aws-sdk-wrap": "3.5.7",
     "cache-manager": "2.10.0",
     "cache-manager-fs": "1.0.8",
     "lodash.defaults": "4.2.0",
