@@ -53,7 +53,7 @@
     "lodash.get": "4.4.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.6.3",
+    "@babel/cli": "7.6.4",
     "@babel/core": "7.6.4",
     "@babel/plugin-proposal-object-rest-spread": "7.6.2",
     "@babel/register": "7.6.2",
