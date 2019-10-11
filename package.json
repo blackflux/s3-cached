@@ -62,7 +62,7 @@
     "aws-sdk": "2.547.0",
     "babel-eslint": "10.0.3",
     "chai": "4.2.0",
-    "coveralls": "3.0.6",
+    "coveralls": "3.0.7",
     "eslint": "6.5.1",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
