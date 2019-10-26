@@ -73,7 +73,7 @@
     "mocha": "6.2.2",
     "node-tdd": "2.5.17",
     "nyc": "14.1.1",
-    "semantic-release": "15.13.27"
+    "semantic-release": "15.13.28"
   },
   "engines": {
     "node": ">= 6.10.3"
