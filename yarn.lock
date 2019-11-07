@@ -736,10 +736,10 @@ aws-sdk-wrap@3.5.10:
     object-hash "2.0.0"
     smart-fs "1.11.0"
 
-aws-sdk@2.565.0:
-  version "2.565.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.565.0.tgz#dec20f3fb0d2ad56711cac57ef1ef0ffbecfe903"
-  integrity sha512-Vjoeo2ZZBsoWyBjGeMNOmeCez0v2COtpDYyNsHlxj1IPmAcSDGBRSOTOJh6CWjuPPe0r899byBW9lGaYTHcUBA==
+aws-sdk@2.567.0:
+  version "2.567.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.567.0.tgz#f5b96a2e461b3c6e760040cb5609b36cd0a36cb3"
+  integrity sha512-JGtO9QvOzOWmpgm/ErS82v6qHw2a4ObNa68eU1ivT+QtiqXPJOAFEBMj4dAu2KwLDr+XsljTRZd7b/7pZhXXNA==
   dependencies:
     buffer "^4.9.1"
     events "^1.1.1"
