@@ -742,12 +742,12 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@3.5.11:
-  version "3.5.11"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.5.11.tgz#3a86cc1c767dc173cc38daba596d3f51a3e82491"
-  integrity sha512-8OTXiOqnoqJVRkvbNh5sf6jeNHjtJcCHSpoXkIZ994IKdOIWXuMdtc/9H1dJrgU8pmHaizKkbQoNosaWuU+AqA==
+aws-sdk-wrap@3.5.12:
+  version "3.5.12"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.5.12.tgz#56f133f8e3d8936a27cc0a6b246ecd724b683322"
+  integrity sha512-0kQB768abFvZ9/hza1TkZAeTEFKXlD71ZF/tc4tffw0Sw+cXOQM0lrgRPZZqTtN8R0zlS3Kvjv0ErHw1Jyxl6Q==
   dependencies:
-    joi-strict "1.1.7"
+    joi-strict "1.1.8"
     lambda-async "1.0.2"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
@@ -3742,6 +3742,13 @@ joi-strict@1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.1.7.tgz#972f305cdaba6858e9a6bb0eefb49d966a6deffe"
   integrity sha512-+7SR9EQuZeSNDm2/ADMDHkww8DO0L8zXf1xMOHye1m0xFtg+sWh67EaHTJzb1QPAw9hwC07vZYroiHHlYS5iHw==
+  dependencies:
+    "@hapi/joi" "16.1.7"
+
+joi-strict@1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.1.8.tgz#68e3b8b55a70437438f31ffccd3c83a43f39688f"
+  integrity sha512-shYn0h5fzXN3JDMZSlzc4m+vGdnNboAv2dLlQHu5eAbJoVWWhICGDbeayjMrsPjICePPvHiZwbOzNyyAakznCQ==
   dependencies:
     "@hapi/joi" "16.1.7"
 
