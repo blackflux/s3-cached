@@ -210,6 +210,17 @@
     "@hapi/pinpoint" "^1.0.2"
     "@hapi/topo" "^3.1.3"
 
+"@hapi/joi@16.1.8":
+  version "16.1.8"
+  resolved "https://registry.yarnpkg.com/@hapi/joi/-/joi-16.1.8.tgz#84c1f126269489871ad4e2decc786e0adef06839"
+  integrity sha512-wAsVvTPe+FwSrsAurNt5vkg3zo+TblvC5Bb1zMVK6SJzZqw9UrJnexxR+76cpePmtUZKHAPxcQ2Bf7oVHyahhg==
+  dependencies:
+    "@hapi/address" "^2.1.2"
+    "@hapi/formula" "^1.2.0"
+    "@hapi/hoek" "^8.2.4"
+    "@hapi/pinpoint" "^1.0.2"
+    "@hapi/topo" "^3.1.3"
+
 "@hapi/pinpoint@^1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@hapi/pinpoint/-/pinpoint-1.0.2.tgz#025b7a36dbbf4d35bf1acd071c26b20ef41e0d13"
@@ -742,17 +753,17 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@3.6.0:
-  version "3.6.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.6.0.tgz#355274c73b2ecc777702f9608f3bcdd2361b1329"
-  integrity sha512-+NCbu1NebPoJtb/ynrH00ad7WbOsyBgIF9H9y/61aA+KZzo27jBiI8bKoaeult1WBfLLj+tRkic31XqciuQJ3g==
+aws-sdk-wrap@3.6.1:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.6.1.tgz#6ce6e22c679d239993a87499451e8aec7a2b65f1"
+  integrity sha512-bWA/Ie3ixxu5CjmrxgielgB9HFFjA5Kl+xU6BoyHz6iGV/DAb7rwkA3xWsLcs8YZNVYOOzgKWdwRWh7HpUyyFg==
   dependencies:
-    joi-strict "1.1.8"
+    joi-strict "1.1.9"
     lambda-async "1.0.3"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
     object-hash "2.0.0"
-    smart-fs "1.11.1"
+    smart-fs "1.11.2"
 
 aws-sdk@2.580.0:
   version "2.580.0"
@@ -3763,6 +3774,13 @@ joi-strict@1.1.8:
   dependencies:
     "@hapi/joi" "16.1.7"
 
+joi-strict@1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.1.9.tgz#95087451a65040bc6d0cd4c1e4e10b433abb2044"
+  integrity sha512-WjlU406m2Oit7w5YgAfn/KKo45nhkjli3dwmhjOiKSEkjes4/tD1kpq8XMAa+lw2cbeWMPPIqqhys0v6YcKGtw==
+  dependencies:
+    "@hapi/joi" "16.1.8"
+
 js-gardener@2.0.115:
   version "2.0.115"
   resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-2.0.115.tgz#58acf55135daf02fc7649a3be8f3744e0afd6f44"
@@ -6629,10 +6647,10 @@ smart-fs@1.11.0:
     xml-js "1.6.11"
     yaml-boost "1.9.17"
 
-smart-fs@1.11.1:
-  version "1.11.1"
-  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.11.1.tgz#4e6e7bc41bff730e67c47cdf2df11bbeb8ad860a"
-  integrity sha512-oC50uh0jj6s23Hp1jOiB43LRm4jJWHxBvg8vogm9QYtnGFdLeWW4dKsfdRJ9xcGbugtLgwfXyTtRlooB2mUxww==
+smart-fs@1.11.2:
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.11.2.tgz#e3a2c8bc103f5d1becf80def29c3bab67c5fc47b"
+  integrity sha512-hqwEn6rC6l5cehd7n7zsXe2zmcpHRk2r+QfmEzf/yIlzA+eM0Qtrk/R/Rz5KvHQgefqMOo+vkDntGII+tHli1g==
   dependencies:
     fs-extra "8.1.0"
     js-yaml "3.13.1"
@@ -6641,7 +6659,7 @@ smart-fs@1.11.1:
     lodash.isequal "4.5.0"
     object-align "1.0.9"
     xml-js "1.6.11"
-    yaml-boost "1.9.17"
+    yaml-boost "1.9.18"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
@@ -7814,6 +7832,16 @@ yaml-boost@1.9.17:
   version "1.9.17"
   resolved "https://registry.yarnpkg.com/yaml-boost/-/yaml-boost-1.9.17.tgz#4cb1c7405aa55a48488e77c34a1772c58e62d2d6"
   integrity sha512-4pPqz1pt07W3QMeQ/yZs7NuatgfH0pQGlUnzJR53uw34EvgocD1YvBZZ5WPrdO5dqVuz84zZLmFMQJHoPPrOPw==
+  dependencies:
+    js-yaml "3.13.1"
+    lodash.get "4.4.2"
+    lodash.mergewith "4.6.2"
+    lodash.set "4.3.2"
+
+yaml-boost@1.9.18:
+  version "1.9.18"
+  resolved "https://registry.yarnpkg.com/yaml-boost/-/yaml-boost-1.9.18.tgz#7b7423af4f8641a1048c3dfc7473308b82a7a9f2"
+  integrity sha512-/YrAJLcELw85HOPSzgRwV3f7crqz8rL9NqOlCzB+Tzs8SnUPoRTyGvUiVrA34u6Gkb5Yw6NIHd1r9seROLV+kA==
   dependencies:
     js-yaml "3.13.1"
     lodash.get "4.4.2"
