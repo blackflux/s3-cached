@@ -4818,16 +4818,16 @@ node-pre-gyp@^0.12.0:
     semver "^5.3.0"
     tar "^4"
 
-node-tdd@2.5.19:
-  version "2.5.19"
-  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.5.19.tgz#7cafc2e895e1a41afa48015a2f870f0dc714d340"
-  integrity sha512-u2hpfyMyvx0uGUVrPi6cqo31OCs/IcBiLfOx1TJpSHf+1zyp/HYKSAuvr79m6+IGChdcgT02f8kpaZRS+mUhCw==
+node-tdd@2.5.20:
+  version "2.5.20"
+  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.5.20.tgz#6b50f1623c933ce9cdcd8dec49db920b339f80a3"
+  integrity sha512-pzHzGe2wfp9g7cRnw+F/1/jxrINYrOxUUiY8om/8MqqSsQ/UJdxAkQt4oC4h0KzcT92BGFxWcNgTbf/tJ3QHdw==
   dependencies:
     callsites "3.1.0"
-    joi-strict "1.1.8"
+    joi-strict "1.1.9"
     lodash.get "4.4.2"
     nock "11.7.0"
-    smart-fs "1.11.0"
+    smart-fs "1.11.2"
     timekeeper "2.2.0"
     tmp "0.1.0"
 
