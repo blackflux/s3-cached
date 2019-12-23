@@ -72,7 +72,7 @@
     "js-gardener": "2.0.121",
     "mocha": "6.2.2",
     "node-tdd": "2.5.24",
-    "nyc": "14.1.1",
+    "nyc": "15.0.0",
     "semantic-release": "15.14.0"
   },
   "engines": {
