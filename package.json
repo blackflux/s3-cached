@@ -76,7 +76,7 @@
     "semantic-release": "15.14.0"
   },
   "engines": {
-    "node": ">= 6.10.3"
+    "node": ">= 10"
   },
   "files": [
     "lib"
