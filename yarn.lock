@@ -179,10 +179,10 @@
   dependencies:
     smart-fs "1.11.5"
 
-"@blackflux/robo-config-plugin@3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@blackflux/robo-config-plugin/-/robo-config-plugin-3.0.4.tgz#eca21e6d07e494073ca8fb3a2ffac9ec14a7634b"
-  integrity sha512-jggX+YF/p19xCnFamBHJTZlAErOopjb3nblvhH4/IcrLq22YUP5ndUBl8NvmVytNus/nQA9YZjExB7npybl9Pw==
+"@blackflux/robo-config-plugin@3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@blackflux/robo-config-plugin/-/robo-config-plugin-3.0.5.tgz#826dc7d8304fd28bf8c143785bc7bfe7b7a5f1a9"
+  integrity sha512-P0sf5gq7fbBr+5qW4BIFc5KGjFhq8VV+mUoiolFxFvOaeq9uCGnr4zX3z+7YfwBrqOv14LDfSKsY2uSfsLuNTw==
 
 "@hapi/address@^2.1.2":
   version "2.1.2"
@@ -766,17 +766,17 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@3.6.8:
-  version "3.6.8"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.6.8.tgz#26655c832814474b2b5b99d62c6ed2557a4e3807"
-  integrity sha512-f8saTdR/fJAPOpqU0PG80z6wq0LD6poGrAstcidUdMT6tut7eF5gaDKvg9594sUEJommlPxwecXMyPzpPFccxw==
+aws-sdk-wrap@3.6.9:
+  version "3.6.9"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.6.9.tgz#f0004019ee1ab0e0e0687cf0b1edacc7a5f23c27"
+  integrity sha512-gpORV6yPBMUEEg587QStMQU2f2xq62t/buLKkD/G9gs1+A0eluwhCY0GkAWTarNIt22WIOnwNH8i+N4RIsXJvg==
   dependencies:
     joi-strict "1.1.10"
     lambda-async "1.0.4"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
     object-hash "2.0.1"
-    smart-fs "1.11.4"
+    smart-fs "1.11.5"
 
 aws-sdk@2.596.0:
   version "2.596.0"
