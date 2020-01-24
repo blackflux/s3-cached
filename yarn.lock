@@ -794,10 +794,10 @@ aws-sdk-wrap@3.6.13:
     object-hash "2.0.1"
     smart-fs "1.11.8"
 
-aws-sdk@2.605.0:
-  version "2.605.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.605.0.tgz#149fb9946784aef418250250b2845b8e1ffc8413"
-  integrity sha512-ZFvFBqZVALn4y/BhIIISXxkssENyQwMF94X9qF6WiEvivNNaQ3I80u1Qr2e5VCpIFT+5ZcxrKYz3RsiVzAMnqw==
+aws-sdk@2.609.0:
+  version "2.609.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.609.0.tgz#a58394e05869d00b12ef3e1d0be0dffaf4f2a260"
+  integrity sha512-JCe8OtwnhDwklY8S65IXkA8vcyRFjrCCQ3L1v01Aj8swEPEOG8/rxyZ4lrHN9hQ9u3BbA+0ySUbRWkJV5PpGBw==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -6705,10 +6705,10 @@ sax@>=0.6.0, sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@16.0.2:
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-16.0.2.tgz#4570b84324cbc2a82e71dbb75208b9f6c6c81570"
-  integrity sha512-KQmPGJvhB3qn49pFGnAuSm8txOV6nLWrUg/jQG+1CYfg7rrroVKqpZ9mmA6+PjfoFCroQ0Na7Ee5DuzHiR6e/A==
+semantic-release@16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-16.0.3.tgz#af152cbbc7e8d9b694ecb345f539219a2d10749f"
+  integrity sha512-k9AFk0v1AM241R2+d16Z0W6q7qjkd8bmKcpLfpE+8tttynwjOfJVrrqyAAzTscS+V/lTKqvJNZJVRjlyIkAYUg==
   dependencies:
     "@semantic-release/commit-analyzer" "^7.0.0"
     "@semantic-release/error" "^2.2.0"
