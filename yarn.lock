@@ -1101,13 +1101,13 @@ cache-manager-fs@1.0.8:
     fs-promise "^0.3.1"
     uuid "^2.0.1"
 
-cache-manager@2.10.2:
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-2.10.2.tgz#7ecabfb82db9e80290dc6705f3a555ded1c9cc8c"
-  integrity sha512-VueuJaWPfugreadk88pZ23g0nGVd4qqG4Y8X8y9LQePEN+EhaDlXbJM5pbJB0CdpuTmqVPCmcWgtEDxLqbT1zw==
+cache-manager@2.10.3:
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-2.10.3.tgz#2618d002074381c4e343af7634a1120a27067ed4"
+  integrity sha512-HKZrOj72BU2XUXiB9BLTBrO+sy2vRfYkCY2UnL4XqgeIuz0U4S/qeUDSRHHt2VDhoJJyjLt8YD2qz3rAnz8SDg==
   dependencies:
     async "1.5.2"
-    lodash.clonedeep "4.5.0"
+    deepmerge "4.2.2"
     lru-cache "4.0.0"
 
 cache-manager@^1.1.0:
