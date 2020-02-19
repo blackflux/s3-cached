@@ -791,16 +791,16 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@3.6.15:
-  version "3.6.15"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.6.15.tgz#2fa4a06c75c395a051c5ee6aa2b8e9907e82faa6"
-  integrity sha512-5HnpFrjTXd+9h/zWvTmEDucudV8L3UTWldSM2EgyIAsryPi/qrAj7ncjUjRw2EDgfROPH48H3AkTUhshPJtjjA==
+aws-sdk-wrap@3.6.16:
+  version "3.6.16"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.6.16.tgz#305ae949148925706d1bd0c847ecf2313cf20615"
+  integrity sha512-HCE1zlMYgF6YrSI1kK2sE9b/RMRkn/K3ohpXPlgucnVTZ1Q/ooiEWMWnoUdFV5H05cfp5jZV5HMhfOmERtH/lQ==
   dependencies:
     joi-strict "1.1.11"
     lambda-async "1.0.5"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
-    object-hash "2.0.2"
+    object-hash "2.0.3"
     smart-fs "1.11.8"
 
 aws-sdk@2.621.0:
@@ -5417,10 +5417,10 @@ object-deep-contain@1.0.22:
   resolved "https://registry.yarnpkg.com/object-deep-contain/-/object-deep-contain-1.0.22.tgz#bee7a05eb1177486169d3bdf1f0b99da5c2b8d4e"
   integrity sha512-Ru8rGGVEd1Dq+z3LGKjWOzG2iQpbxW8fPNpYOBpTALGiZt1HBzKjGt/P3KQyUvN6WzWlwImXAB+RIhjsSpEFUA==
 
-object-hash@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.0.2.tgz#f7b2212dbe07d07e340ccd6004c59504fc4015cf"
-  integrity sha512-b+2AKjAf6uQlxxv8ChHdM+VT4eeX+ZSwv+pk2xIXZWbo+yxn4/En1iC+GHe/OFYa9on0AhFF2PvuAcFHoiiHaA==
+object-hash@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.0.3.tgz#d12db044e03cd2ca3d77c0570d87225b02e1e6ea"
+  integrity sha512-JPKn0GMu+Fa3zt3Bmr66JhokJU5BaNBIh4ZeTlaCBzrBsOeXzwcKKAK1tbLiPKgvwmPXsDvvLHoWh5Bm7ofIYg==
 
 object-inspect@^1.6.0:
   version "1.6.0"
