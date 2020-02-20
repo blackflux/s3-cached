@@ -803,10 +803,10 @@ aws-sdk-wrap@3.6.16:
     object-hash "2.0.3"
     smart-fs "1.11.8"
 
-aws-sdk@2.622.0:
-  version "2.622.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.622.0.tgz#8f006f082c32ad6fc11df9bbecfd55c8d8c9a5c2"
-  integrity sha512-CV5RZjoh2PZ/wALQXx932dTYukPTZXZmfjlRTJqNibRhyN36/E1KwkX1va1CROii2AnfnxjzV7OqymH0TgKlUg==
+aws-sdk@2.623.0:
+  version "2.623.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.623.0.tgz#c03f91d813727f0931d9b36d904764291e44aa5f"
+  integrity sha512-tncfZvqupRD3DLQM+8ZYgDwH7OjjIxLanzmUPsOw1GpJW3xqTzRYyja4drywSpnR4roSVUpBPE2H2/iMOXtepQ==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -5004,10 +5004,10 @@ node-preload@^0.2.0:
   dependencies:
     process-on-spawn "^1.0.0"
 
-node-tdd@2.9.1:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.9.1.tgz#1c979ea95187667d8fbbd999062e5cfd29dc5d64"
-  integrity sha512-hJ8zTOcpFqfIcLwXQw9lf0v9OBe/fl4rn0pneXQgKJ8F+0JCafjNyza6BhPaO9AYJt2r4a/yaglZhAsWNOl8pw==
+node-tdd@2.9.2:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.9.2.tgz#67e513ae0859c233848ed4187d8703d2bd65e04d"
+  integrity sha512-XeOph5jgtPlZQqYbsRW4rqUM9X2x0jqBvxtpCpWT1Up8j7NbXdDJ6a5uUGo9Y+Q+vhMorIY1YR2woF3JneSBgQ==
   dependencies:
     callsites "3.1.0"
     joi-strict "1.1.11"
