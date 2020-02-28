@@ -791,10 +791,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@3.6.17:
-  version "3.6.17"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.6.17.tgz#7287c3b110fa949a47b5fca92364ff93fabee7a1"
-  integrity sha512-ssg3aiU9Q+fvoS6vjxWVjeDNbmYU2LWPS/CQGWBNDuvC60FyWtAQ1Q563jqOiWm4L7IFykMxGIKcz4OccxzOHg==
+aws-sdk-wrap@3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-3.7.1.tgz#0d9f35b0041189d7ea82b71309835340be289709"
+  integrity sha512-5PBx0oZRcvKV+2U1K4PTb7YnzrxfXwSudSA2170DGHC3FIch680ByuSVHktomysT1CffhTOSX/d4B5wT9NuvvQ==
   dependencies:
     joi-strict "1.2.0"
     lambda-async "1.0.5"
@@ -803,10 +803,10 @@ aws-sdk-wrap@3.6.17:
     object-hash "2.0.3"
     smart-fs "1.11.8"
 
-aws-sdk@2.628.0:
-  version "2.628.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.628.0.tgz#bd4b54d3f8243af5c20bbd8aea5043aaef91c5ea"
-  integrity sha512-k0yQqqgTuwCWqPvLe09vGGSJ88oKaWPPCC6uyxQKv7pPQcz9cFZjmjLe6QdGJZeCmeb3rGIZlG+N4Z+9LnwCNg==
+aws-sdk@2.629.0:
+  version "2.629.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.629.0.tgz#48b2f22504330124c735fa09393b53e361d12617"
+  integrity sha512-QJABaXOq78Cd2dYa5WZctpfG4EoFQyp6KL8YPc8oZrVAEhvipiPxSgIm4nI6hi9gjb3rFQD5SPFBwbS10lXf5A==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
