@@ -5005,17 +5005,17 @@ node-sass-tilde-importer@^1.0.2:
   dependencies:
     find-parent-dir "^0.3.0"
 
-node-tdd@2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.10.0.tgz#56660622699f01348d6bde729f47dc18952aed03"
-  integrity sha512-A2BI/Aei4FO7JRyGpMPCZHnExX4yO1YsHLnkVtNqi4aCgXGJ9vMoeY2STzZCKLO90XI/2bxyp2WjWYAo6FHuZg==
+node-tdd@2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.10.1.tgz#19940da016f1ddc745098960b1950b298ccd3871"
+  integrity sha512-32iEVH/LwVRoXKBIhIwsvud84VjVkEMvND0d8lP26u0MyV4LsMq+nzQXVeb+VXL/7gby2x9HYgo03BeZNYn3nQ==
   dependencies:
     callsites "3.1.0"
     joi-strict "1.2.1"
     lodash.get "4.4.2"
     minimist "1.2.5"
     nock "12.0.3"
-    smart-fs "1.11.9"
+    smart-fs "1.11.10"
     timekeeper "2.2.0"
     tmp "0.1.0"
     uuid "7.0.2"
