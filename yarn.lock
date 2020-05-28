@@ -865,10 +865,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.4.6:
-  version "4.4.6"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.4.6.tgz#d590b1152172e600c34fa42daa81869b20759be6"
-  integrity sha512-+ZZahO7onhe6dhESlMdGcG7Kn9OUO7030gyt9NLmQXZrUUnUIj1pFqBsM7XYPOOoEzfmApoygAxtYTpZaCcZZA==
+aws-sdk-wrap@4.4.7:
+  version "4.4.7"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.4.7.tgz#c2de74918444af5c887fec080c38e8580691c069"
+  integrity sha512-NzPvu0gRiJmXj/hKxRmBfmcultCQQTd2/UoQ+n7Wow2m4Gs1Mq5OoipXEIEzPc421opGYmNcXJJqAGWyQQuAoA==
   dependencies:
     joi-strict "1.2.2"
     lambda-async "1.0.5"
@@ -877,7 +877,7 @@ aws-sdk-wrap@4.4.6:
     lru-cache-ext "1.1.11"
     object-hash "2.0.3"
     promise-pool-ext "1.3.2"
-    smart-fs "1.11.12"
+    smart-fs "1.11.13"
 
 aws-sdk@2.685.0:
   version "2.685.0"
@@ -6937,6 +6937,20 @@ smart-fs@1.11.12:
     xml-js "1.6.11"
     yaml-boost "1.9.21"
 
+smart-fs@1.11.13:
+  version "1.11.13"
+  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-1.11.13.tgz#afc5a731afc0760305cfc31d3329fc51cc61ea2e"
+  integrity sha512-2F4bHTZpDgw2DWEjkWT92ySIKTRHMtasEEQBJ0QccpipjhYGDWL+Hmubr0VUxrRcjfpiAwi5pocKJ49mSa4x2Q==
+  dependencies:
+    fs-extra "9.0.0"
+    js-yaml "3.14.0"
+    json-stringify-pretty-compact "2.0.0"
+    lodash.clonedeep "4.5.0"
+    lodash.isequal "4.5.0"
+    object-align "1.0.11"
+    xml-js "1.6.11"
+    yaml-boost "1.9.22"
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
@@ -8188,6 +8202,16 @@ yaml-boost@1.9.21:
   integrity sha512-gYpJMWhXZjnkR8vdRukqCe6h+hwX9t4Pa2amNKWXEt/sXRTztZ3nH6SwR8pI9Dbae03TM79sClCDXw/tiYULgA==
   dependencies:
     js-yaml "3.13.1"
+    lodash.get "4.4.2"
+    lodash.mergewith "4.6.2"
+    lodash.set "4.3.2"
+
+yaml-boost@1.9.22:
+  version "1.9.22"
+  resolved "https://registry.yarnpkg.com/yaml-boost/-/yaml-boost-1.9.22.tgz#670bd35221dbc30cdfd448818e3053dcd04e1b6d"
+  integrity sha512-Wvv22z13NyFcyKLtoPdduC+1QKP2SDm8lZx4uW8dCjheup5ur7TTFtLUwykksWLxRCqqWt8XpUi8/QRkdU2YZA==
+  dependencies:
+    js-yaml "3.14.0"
     lodash.get "4.4.2"
     lodash.mergewith "4.6.2"
     lodash.set "4.3.2"
