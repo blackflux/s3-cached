@@ -865,10 +865,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.4.5:
-  version "4.4.5"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.4.5.tgz#fb5aaa6a4302bb285b4483067157b7f768c8a51d"
-  integrity sha512-tC7xhySvxHAMfSLw3EAEFfDmWU0W8DUBxHp6y6bk12o2dWcnA9roTbS7aw2N2IGP7utPH9tMNB6FcUacB++hjA==
+aws-sdk-wrap@4.4.6:
+  version "4.4.6"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.4.6.tgz#d590b1152172e600c34fa42daa81869b20759be6"
+  integrity sha512-+ZZahO7onhe6dhESlMdGcG7Kn9OUO7030gyt9NLmQXZrUUnUIj1pFqBsM7XYPOOoEzfmApoygAxtYTpZaCcZZA==
   dependencies:
     joi-strict "1.2.2"
     lambda-async "1.0.5"
@@ -877,7 +877,7 @@ aws-sdk-wrap@4.4.5:
     lru-cache-ext "1.1.11"
     object-hash "2.0.3"
     promise-pool-ext "1.3.2"
-    smart-fs "1.11.11"
+    smart-fs "1.11.12"
 
 aws-sdk@2.685.0:
   version "2.685.0"
