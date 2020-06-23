@@ -5045,10 +5045,10 @@ node-sass-tilde-importer@^1.0.2:
   dependencies:
     find-parent-dir "^0.3.0"
 
-node-tdd@2.11.5:
-  version "2.11.5"
-  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.11.5.tgz#32859fb1f140b205b9f7c00b626438f29d479ddb"
-  integrity sha512-eZ0Wdwqgw0YYnlDWEctWXqH4+YJJwuIFZRTinodgmRtUAOz3WoXJ/dXBSBp+/8lQXSqBPE+px3Kk1BVucsKFMQ==
+node-tdd@2.12.1:
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.12.1.tgz#57da3b5990f28646ff16e7ee6d4e69ae51f20d28"
+  integrity sha512-loTASAqn14N/19Nh1Q25ha6Pnjn4ajwkJOmdWUwGKgqJtRr4uDaBThd41eryNTZcRgIAIGWij4cN8jk+w2OUkw==
   dependencies:
     callsites "3.1.0"
     joi-strict "1.2.2"
