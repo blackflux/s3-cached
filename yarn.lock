@@ -899,10 +899,10 @@ aws-sdk-wrap@4.4.7:
     promise-pool-ext "1.3.2"
     smart-fs "1.11.13"
 
-aws-sdk@2.704.0:
-  version "2.704.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.704.0.tgz#7b039a0a5ba8eaabb91c5f73d06d4330192c5f30"
-  integrity sha512-Cjkc86+9sKNn34iIiMa4MimHmr1xpNQZaPVHnnQCpBuh0p6VMDPloz3xc+4LEyoNuwIBzTRjZCVUePVyc31+gw==
+aws-sdk@2.705.0:
+  version "2.705.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.705.0.tgz#6c42851f0efdfe2685eb2dab72740a01742468bd"
+  integrity sha512-eD3YD3UgCdFIYlkAVYW1rbriKSNHm7nsZbYsBuo91pbyq4XYT56w2oTyNECorYPoq//Y4LQTTx8cbOuEjsNi3w==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5052,10 +5052,10 @@ node-sass-tilde-importer@^1.0.2:
   dependencies:
     find-parent-dir "^0.3.0"
 
-node-tdd@2.14.0:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.14.0.tgz#bb70b4b083426bc7e39dbcc8a51bb54d3c1421e0"
-  integrity sha512-3J7HJRTJ+usXTIhdLo6ykuB8JkwH6YpkzoX3a8Qa4EB3nYFEmtkC9myv+0NQu0GAi7PaeTUGaJVKOgKDgpUJ5A==
+node-tdd@2.15.0:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.15.0.tgz#1066e572b0c94b6008ec111ced05570fc2dc8739"
+  integrity sha512-fnC/z3zE6JMKFshBC0h98YGJFBFAXoTgBFI0Nqtl41QRySR0fN1YYfFXL4ntwrSGxwPovZRhXHQmvDYVRc61SQ==
   dependencies:
     callsites "3.1.0"
     joi-strict "1.2.2"
@@ -6744,10 +6744,10 @@ sax@>=0.6.0, sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@17.0.8:
-  version "17.0.8"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.0.8.tgz#68b80461fdd8eb445228ae23fd9e85857a50ae3f"
-  integrity sha512-9KcdidiJ4xchrJXxPdaDQVlybgX0xTeKyVjRySYk5u9GpjibXD7E5F8cB0BvFLMDmMyrkCwcem0kFiaLD2VNPg==
+semantic-release@17.1.1:
+  version "17.1.1"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.1.1.tgz#d9775968e841b2b7c5020559e4481aea8520ca75"
+  integrity sha512-9H+207eynBJElrQBHySZm+sIEoJeUhPA2zU4cdlY1QSInd2lnE8GRD2ALry9EassE22c9WW+aCREwBhro5AIIg==
   dependencies:
     "@semantic-release/commit-analyzer" "^8.0.0"
     "@semantic-release/error" "^2.2.0"
