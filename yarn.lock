@@ -309,10 +309,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@blackflux/eslint-plugin-rules@1.3.33":
-  version "1.3.33"
-  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.33.tgz#2de4d878f869b532de9e610c6fe19c90f971e534"
-  integrity sha512-LG7V/Z5ixbMfaFTdV0+tE0dHgGWQ1A6J0tqpg2Y/C4ezOdGx/Jib49E10ukzWhUohuXkanZfRLqo7YEnUrQLOw==
+"@blackflux/eslint-plugin-rules@1.3.34":
+  version "1.3.34"
+  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-1.3.34.tgz#af261056050d95831bc4be013edc4995e5beada3"
+  integrity sha512-ZeWKTwqvNmD5Yg7xtsEYc8/xzZ5uX0FHGn8/bgsaX85pPTl2MVp2LAU4UQ3kR0vfYX8B4I4S3bDd5rGYgdN7gQ==
   dependencies:
     smart-fs "1.11.16"
 
@@ -1006,10 +1006,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.4.12:
-  version "4.4.12"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.4.12.tgz#88feea8fdea488e019b78fb2a8e1d13ad8595d71"
-  integrity sha512-AoVSNrQhy5lxk1um3CIE3o3T4BJ5JO84oA/pdDQ1h0D9vKaegc/mVM6xq2ZCtge9d96Oq8I7/S5gKrVmZF4MQQ==
+aws-sdk-wrap@4.4.13:
+  version "4.4.13"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.4.13.tgz#4df7856bf0e4bb4640c0327c60b68d097fc14e74"
+  integrity sha512-bR4Wz5cxRav4HBNNVWaKrSWlXdzefvc1mc69sB+OpRJT9Xiq7cIsylIidhPcI1lYT2n8mSoA7jo82yTnnwnUVQ==
   dependencies:
     joi-strict "1.2.3"
     lambda-async "1.0.6"
@@ -1020,10 +1020,10 @@ aws-sdk-wrap@4.4.12:
     promise-pool-ext "1.3.5"
     smart-fs "1.11.16"
 
-aws-sdk@2.746.0:
-  version "2.746.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.746.0.tgz#19f2b8d5d628774030ae184b9e59a67bb9de1f63"
-  integrity sha512-TMa/jxS2AHuZqAYNyv0X+Ltjt2NebjraT7xdL6NqKUiu0U61j0uav+gr2zw9lkz5q+KeTeYo7pg+S9LXVawHXw==
+aws-sdk@2.747.0:
+  version "2.747.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.747.0.tgz#487776536a7f8e4e18d57ff22dd50d777f1d0fe8"
+  integrity sha512-JA2ygLXFw0tLjc6nlauH3wnc6haoPU023fJCZN01xrw22l+s4rRjVGxJmG83VrfCmq+lrqCv0kVwlzyxbixGhA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -5153,10 +5153,10 @@ node-sass-tilde-importer@^1.0.2:
   dependencies:
     find-parent-dir "^0.3.0"
 
-node-tdd@2.18.3:
-  version "2.18.3"
-  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.18.3.tgz#2c9212d92322b752c8aa5b78f2727caa574e0d0e"
-  integrity sha512-Ez+LDUVJltrjooiZFROL8thF3hCfAaDIm6BlFQTyXzkJ/OtC8E9FsdB9Nivn0Ck8C9krAqCFXXJace/A8y1TRA==
+node-tdd@2.18.4:
+  version "2.18.4"
+  resolved "https://registry.yarnpkg.com/node-tdd/-/node-tdd-2.18.4.tgz#0a4dae16f3072646e23105d7b41664c29c9597d6"
+  integrity sha512-d4vvfv9+Ch8Ty3/b3tVVoA9sTjDTt+hiXWqy4b/8/H8KCYsUz285QocZe6S1LVzK0izXxrpiCv2Mm3+hdbaErQ==
   dependencies:
     callsites "3.1.0"
     joi-strict "1.2.3"
@@ -5164,7 +5164,7 @@ node-tdd@2.18.3:
     lodash.get "4.4.2"
     minimist "1.2.5"
     nock "13.0.4"
-    object-scan "13.1.2"
+    object-scan "13.1.4"
     smart-fs "1.11.16"
     timekeeper "2.2.0"
     tmp "0.2.1"
@@ -5587,6 +5587,11 @@ object-scan@13.1.2:
   version "13.1.2"
   resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-13.1.2.tgz#d190cdfd8821b6496afd2305568c5e7aaa539e24"
   integrity sha512-MurZBgumqnz1rM+cQ/3lGM33Mr+MXTvGUg3H1Ylcad4Q71XbBmsFKcqWq6lFc+70W1t3xCsTWYrXT/doZt9LeA==
+
+object-scan@13.1.4:
+  version "13.1.4"
+  resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-13.1.4.tgz#dab76506cef35300ab744cfce5ecf27ad0734de0"
+  integrity sha512-pwc5F73RyduRMz/C+JvEllvV5nPhYj86vpdIykUnsEY6PI5gpRWuilSP3K0qhAxOyTryW6ZW2pHhweb+6ojThA==
 
 object-treeify@1.1.26:
   version "1.1.26"
