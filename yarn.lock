@@ -1035,10 +1035,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.6.3:
-  version "4.6.3"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.6.3.tgz#30d8ece33a0345637f2f6fb4995928800c9859a3"
-  integrity sha512-sD1Yxs4Jsjag068vAL+uiriU2CcWn5Llra6ZEDXwJ7Z8xfXJLDNeULxJOn+6YTIAWsoKTntJXd5+oilMFJt1OQ==
+aws-sdk-wrap@4.6.4:
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.6.4.tgz#c3713873ba19b604c658bf4f281552a7d07d4e41"
+  integrity sha512-19R8NsmW/9GO7NMVAk9/OBbj0tdTTY0Rd37idKv+KzerE/UJo8Jfu1K5DMGEfK2CV4712rUlp8LH17ofhWpZSg==
   dependencies:
     joi-strict "1.2.6"
     lambda-async "1.0.9"
