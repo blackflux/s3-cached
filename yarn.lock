@@ -1039,10 +1039,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.8.0:
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.8.0.tgz#ca5bc12db9c31feb5e4ebabdbe4b53ee79d9404e"
-  integrity sha512-/Xp1QrHdr9/6aYBJoC+OrjkxDnG7lgqGz9YFQJ8nKVlY7vyCzH5krVAOP9moh19lnMSmyRzsfiUtL8hlu0Ezxg==
+aws-sdk-wrap@4.8.1:
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.8.1.tgz#7e84436fa4fb1ac615f208943c6fab87faf52275"
+  integrity sha512-TRGvG9l+X4MCfjOUI5u7Z7M0DIF+viLHdjQfX3KjRxmKn7/F3WLjFcmHHs/V9XJ17mPLMD+sq+0AIfin0LqvdA==
   dependencies:
     joi-strict "1.2.9"
     lambda-async "1.0.10"
@@ -1050,7 +1050,7 @@ aws-sdk-wrap@4.8.0:
     lodash.get "4.4.2"
     lru-cache-ext "1.2.4"
     object-hash-strict "1.2.38"
-    promise-pool-ext "1.3.11"
+    promise-pool-ext "1.3.12"
     smart-fs "1.12.4"
 
 aws-sdk@2.824.0:
@@ -4017,13 +4017,6 @@ jmespath@0.15.0:
   resolved "https://registry.yarnpkg.com/jmespath/-/jmespath-0.15.0.tgz#a3f222a9aae9f966f5d27c796510e28091764217"
   integrity sha1-o/Iiqarp+Wb10nx5ZRDigJF2Qhc=
 
-joi-strict@1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.2.6.tgz#2aed6ae784efa2adbf66175a198eb6d650418f1f"
-  integrity sha512-ShSxfxxoRA/ETL885BNCc+fOCYSoQgkc0ObTT4LWKcU3TBlKsGaxDuyYLOP17oie8dir2ZUvT6YvABpdfj2t8Q==
-  dependencies:
-    "@hapi/joi" "17.1.1"
-
 joi-strict@1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.2.9.tgz#d92e27afcf1abc60fa77ef6a2c3db5e66fca8210"
@@ -6111,12 +6104,12 @@ promise-inflight@^1.0.1, promise-inflight@~1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-promise-pool-ext@1.3.11:
-  version "1.3.11"
-  resolved "https://registry.yarnpkg.com/promise-pool-ext/-/promise-pool-ext-1.3.11.tgz#384d633aa0b1398703e3653db35f5c8b02574eaf"
-  integrity sha512-invzLRFpzLTySxLTPMw6x4NkJ72WN/T0Qn0MOIbOjq6smIfMqn5732xF7CjYVfPQ2rpSg0rNNXa/+OR/F4O/7g==
+promise-pool-ext@1.3.12:
+  version "1.3.12"
+  resolved "https://registry.yarnpkg.com/promise-pool-ext/-/promise-pool-ext-1.3.12.tgz#43c6ca3576907e29cbf3fe46d6e34bed3097ac58"
+  integrity sha512-QyXCFi6QxF1AIQa4qZ7uOaulZxKyk5L2WwplpE2BXEeRTxAbVWuWYFV4HvaVpYw0sXrEcM+RU+pGaHhZlwiqPw==
   dependencies:
-    joi-strict "1.2.6"
+    joi-strict "1.2.9"
 
 promise-retry@^1.1.1:
   version "1.1.1"
