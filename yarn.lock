@@ -1039,17 +1039,17 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.8.3:
-  version "4.8.3"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.8.3.tgz#2e38c62806979f1f72bc1e63a3334f72412f7533"
-  integrity sha512-2MIrZmuRQVs4kjW8yMtLOEc0HZpNwUccERF/Wsv8hU7GEaU0AjYSDFF0zIczV/rntVJWiRQtVbBlFEqn4D9Nhw==
+aws-sdk-wrap@4.8.4:
+  version "4.8.4"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.8.4.tgz#0211d42696c04603994388275db29dfcc34a7959"
+  integrity sha512-zCHjVsV5dsZIMXIGoD7l/J7bZgKxrJZfZfxQ0UXozO5tUcxy9GQKTgOjEXotmjyDH4QoqTeY1MQ/zDGB9V+99A==
   dependencies:
     joi-strict "1.2.9"
     lambda-async "1.0.10"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
     lru-cache-ext "1.2.4"
-    object-hash-strict "1.2.38"
+    object-hash-strict "2.0.0"
     promise-pool-ext "1.3.12"
     smart-fs "1.12.4"
 
@@ -5499,13 +5499,13 @@ object-deep-contain@1.0.29:
   resolved "https://registry.yarnpkg.com/object-deep-contain/-/object-deep-contain-1.0.29.tgz#d6cf9df21455e31de769f486410594cd6885d215"
   integrity sha512-nLOAncdGePrOWzjSD1AwroXRtaUOXf3LRyVhTntdYSPwvWld65toDGxFrDvw/0ji3AGF5FeEvnoBNZBUElK3Ng==
 
-object-hash-strict@1.2.38:
-  version "1.2.38"
-  resolved "https://registry.yarnpkg.com/object-hash-strict/-/object-hash-strict-1.2.38.tgz#03bca3064d61283f40049fd82e6842237ea051aa"
-  integrity sha512-nvcSHgBhNz9GtNJavIT5B3x7nff3/+oQysRG8QkFf7X1w6sBK5n+JWR3SPlyoK4QDkIQhnMbakS6dHbCUdFo2A==
+object-hash-strict@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/object-hash-strict/-/object-hash-strict-2.0.0.tgz#8d9b924f0f033ab4b99221511037464e40ab6fc9"
+  integrity sha512-PLzcFyh8rhvIOQ8L8wpPl7NC3wlzJk91BZX4OBnxZvoJswBJaWQZ2hASBSe1vsZxPFBVILRp/BelnArBLc0tuw==
   dependencies:
     object-hash "2.1.1"
-    object-scan "13.7.1"
+    object-scan "13.8.0"
 
 object-hash@2.1.1:
   version "2.1.1"
@@ -5526,6 +5526,11 @@ object-scan@13.7.1:
   version "13.7.1"
   resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-13.7.1.tgz#2ce78454ae6a35ea45da7f26f2209f5545613122"
   integrity sha512-akfqDKVs77wfaRhcln8p9IVIjfQ6MdgfsqsstAAgBWHHO9OqWjs74IUUqiGihDStpvgKA3fFUqdLpdD2Oi7YkQ==
+
+object-scan@13.8.0:
+  version "13.8.0"
+  resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-13.8.0.tgz#70ec43620b76fbc580856beb5275ee28321f781c"
+  integrity sha512-ljh4WKzs/TTBML0kl+qfTpu13lSZ0Q41aj5XiJa0ue9FkEdP5fi5/FTHbZgsGBiXo/AeyPRh1XZDOuGQLffC1A==
 
 object-treeify@1.1.31:
   version "1.1.31"
