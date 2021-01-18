@@ -1023,17 +1023,17 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.8.4:
-  version "4.8.4"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.8.4.tgz#0211d42696c04603994388275db29dfcc34a7959"
-  integrity sha512-zCHjVsV5dsZIMXIGoD7l/J7bZgKxrJZfZfxQ0UXozO5tUcxy9GQKTgOjEXotmjyDH4QoqTeY1MQ/zDGB9V+99A==
+aws-sdk-wrap@4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.9.0.tgz#27e0af6ed6f7dd49f88b50530cdf4b45b2151140"
+  integrity sha512-ujbvsvnAuvWLP6WcpJ5dqXduXfR9QALqaFl9oDsRSLQMtlj8oujtoMPo7Zt7n5nkTwhzBxhWP0sNpKhw54r6nA==
   dependencies:
     joi-strict "1.2.9"
     lambda-async "1.0.10"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
     lru-cache-ext "1.2.4"
-    object-hash-strict "2.0.0"
+    object-hash-strict "2.0.1"
     promise-pool-ext "1.3.12"
     smart-fs "1.12.4"
 
@@ -5483,10 +5483,10 @@ object-deep-contain@1.0.29:
   resolved "https://registry.yarnpkg.com/object-deep-contain/-/object-deep-contain-1.0.29.tgz#d6cf9df21455e31de769f486410594cd6885d215"
   integrity sha512-nLOAncdGePrOWzjSD1AwroXRtaUOXf3LRyVhTntdYSPwvWld65toDGxFrDvw/0ji3AGF5FeEvnoBNZBUElK3Ng==
 
-object-hash-strict@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/object-hash-strict/-/object-hash-strict-2.0.0.tgz#8d9b924f0f033ab4b99221511037464e40ab6fc9"
-  integrity sha512-PLzcFyh8rhvIOQ8L8wpPl7NC3wlzJk91BZX4OBnxZvoJswBJaWQZ2hASBSe1vsZxPFBVILRp/BelnArBLc0tuw==
+object-hash-strict@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/object-hash-strict/-/object-hash-strict-2.0.1.tgz#33a368df3c978dde11f0f09db4256d4986caf95b"
+  integrity sha512-7+2QlqVSZyCs00lRjytjjRVeSnGdewj+0oeuoifO8LS+AgHkobIquCGiu13R0Q8yxmqfJWIZBcMx+IuX3OZiTQ==
   dependencies:
     object-hash "2.1.1"
     object-scan "13.8.0"
