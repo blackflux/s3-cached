@@ -1023,10 +1023,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-4.10.1.tgz#333e42f29343b4fcdbaf9eb30ce798312b7c3198"
-  integrity sha512-zqhqiGGBwlK/ukNKhIwtoftSq/mocHNmmiO9jXzTHESr4QxCmL5otvSKO5QfkE3Tx+6B2AOO3A66z+kohh2J9g==
+aws-sdk-wrap@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-5.0.0.tgz#31012a1f68b9f88f4496dd1034320ea378740991"
+  integrity sha512-AT0BWPqJwANJiPMvotHpnsb1e0iXnqr6LzcRbfwS+PtzMuM5CF/F8OFgiPootWpoCRh62SYaCcKHYB4RqWPioQ==
   dependencies:
     dynamodb-toolbox "0.2.0-beta.1"
     joi-strict "1.2.9"
