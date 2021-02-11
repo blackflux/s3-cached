@@ -1030,12 +1030,12 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-7.0.1.tgz#5398076b4481e37011e884cdb0bad92354e25cea"
-  integrity sha512-hHFYcQxJIP4TW/PbNJph0Lq4ATK/o+WRiaAJDcqSTpevfQMW8liSpoyDC7R+sf3cEuuG0iW6b3nnunmjpeVnVw==
+aws-sdk-wrap@7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-7.2.1.tgz#d87b3e0b8413794893afec21a5a78dc0ecce70dd"
+  integrity sha512-jLE/gG34gtms9Yy3+konuiNGW+FKD0YaGt7TgEiU5uBuRa/UOHakNyad/icdN7Op5G+4HaDDK/DUCFJjP4h6dg==
   dependencies:
-    dynamodb-toolbox "0.3.2"
+    dynamodb-toolbox "0.3.3"
     joi-strict "1.2.9"
     lambda-async "1.0.10"
     lodash.chunk "4.2.0"
@@ -2250,10 +2250,10 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
-dynamodb-toolbox@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/dynamodb-toolbox/-/dynamodb-toolbox-0.3.2.tgz#e9b9dc060e3d2ee6668e331d628c30644e73e831"
-  integrity sha512-H++IY7pZRqbOUnCdL2lJuevoAMOA0/eFX0hv3KW+6HtZj0lyZEuC4mOFV/N87TLSNAeqauIZuFMXWrr1E6tVKg==
+dynamodb-toolbox@0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/dynamodb-toolbox/-/dynamodb-toolbox-0.3.3.tgz#77343085813c053fa5e123c4a1332ff0e133d953"
+  integrity sha512-6kA+H5rve1OI38XTHbBa06kf+EIzEItxJW/3MoCqhi3YAXdk4uxPIbEu0f+xyd/s8fQRBF7i7ibJnICpDY6g2Q==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
