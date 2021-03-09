@@ -8,7 +8,7 @@
       "packageName": "s3-cached",
       "projectName": "s3-cached",
       "owner": "simlu",
-      "nodeVersion": "12",
+      "nodeVersion": "10",
       "ownerName": "Lukas Siemon",
       "mergeBot": "MrsFlux"
     }
