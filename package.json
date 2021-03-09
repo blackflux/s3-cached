@@ -77,7 +77,7 @@
     "semantic-release": "17.4.1"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12"
   },
   "files": [
     "lib"
