@@ -659,6 +659,23 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
+"@sideway/address@^4.1.0":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.1.tgz#9e321e74310963fdf8eebfbee09c7bd69972de4d"
+  integrity sha512-+I5aaQr3m0OAmMr7RQ3fR9zx55sejEYR2BFJaxL+zT3VM2611X0SHvPWIbAUBZVTn/YzYKbV8gJ2oT/QELknfQ==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
+"@sideway/formula@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.0.tgz#fe158aee32e6bd5de85044be615bc08478a0a13c"
+  integrity sha512-vHe7wZ4NOXVfkoRb8T5otiENVlT7a3IAiw7H5M2+GO+9CDgcVUUsX1zalAztCmwyOr2RUTGJdgB+ZvSVqmdHmg==
+
+"@sideway/pinpoint@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
+  integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -1063,18 +1080,19 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.0.1.tgz#51814cea6ce0b8f145d5c1c514f1354c16551256"
-  integrity sha512-crX6RdDB4o8BmD+9j52ANusZHeXsEPvaQ8XodXmBuGbd2rMs8seRs3iTMbd+yZFwlvUfOHGlB12Sbu18Y7JO1Q==
+aws-sdk-wrap@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.1.0.tgz#fc5f267edd7449a30ae43bca38b3e6b3e5b434d2"
+  integrity sha512-ZHDn8i7qPJWlfOhVaHdhTPvJtv1JQfHgrMP6rkWKY7y5/l9IyP/SIzWjPgXvvQdEr3jyk3RRm9DGgE0gwRwDkg==
   dependencies:
     dynamodb-toolbox "0.3.3"
-    joi-strict "1.2.11"
+    joi-strict "2.0.0"
     lambda-async "1.0.11"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
-    object-hash-strict "2.0.2"
-    promise-pool-ext "1.3.13"
+    object-fields "2.0.22"
+    object-hash-strict "2.0.3"
+    promise-pool-ext "1.3.14"
     smart-fs "1.12.6"
 
 aws-sdk@2.863.0:
@@ -4134,19 +4152,30 @@ joi-strict@1.2.10:
   dependencies:
     "@hapi/joi" "17.1.1"
 
-joi-strict@1.2.11:
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.2.11.tgz#237d85a0d2b2b6776a9364e350a27b17c87ce014"
-  integrity sha512-lQzZRh8iY76PDRBktFJeDJfOJFjLBBIC6GlaZlFrokCyolGO0J/AKBOCuJapV2pGI0dScF3UzV3gjkyvDAvybw==
-  dependencies:
-    "@hapi/joi" "17.1.1"
-
 joi-strict@1.2.9:
   version "1.2.9"
   resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.2.9.tgz#d92e27afcf1abc60fa77ef6a2c3db5e66fca8210"
   integrity sha512-/6NTRabO3cSoqV7mBJZN5XwAsXY8KP2SmAtWHo/c0FaBs3Z/i43MYleVVIZSWahT1CLkS1qH4qFnKhZkvfyjNA==
   dependencies:
     "@hapi/joi" "17.1.1"
+
+joi-strict@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-2.0.0.tgz#f5991d1f73d96107c0e6c1772a3f7898a73fdff8"
+  integrity sha512-gk/nPCOa6eeskRTf6bWPnWhQDC+XlbghlmfNOzoiyADif6H6TQuly7shhYJY6VBi6GPoqgY8HUSSs1YMhT/T0g==
+  dependencies:
+    joi "17.4.0"
+
+joi@17.4.0:
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.4.0.tgz#b5c2277c8519e016316e49ababd41a1908d9ef20"
+  integrity sha512-F4WiW2xaV6wc1jxete70Rw4V/VuMd6IN+a5ilZsxG4uYtUXWu2kq9W5P2dz30e7Gmw8RCbY/u/uk+dMPma9tAg==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/topo" "^5.0.0"
+    "@sideway/address" "^4.1.0"
+    "@sideway/formula" "^3.0.0"
+    "@sideway/pinpoint" "^2.0.0"
 
 js-gardener@2.0.188:
   version "2.0.188"
@@ -5638,13 +5667,20 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
-object-hash-strict@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/object-hash-strict/-/object-hash-strict-2.0.2.tgz#225eb627497e2213222b1ae84e9af0848d940d93"
-  integrity sha512-frBxq3M+P1uqzIzY5YoObiq3aYPAucjIM7KuNl6Ug9EvZR/cvhTCbz0baMmRwu7vhNgmLzNYy+OPtjuGsxq6pg==
+object-fields@2.0.22:
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/object-fields/-/object-fields-2.0.22.tgz#31d7943d7ad8297e86e44698df461b83a41c3215"
+  integrity sha512-RzLvuwTC4uqjF/QVLxrYnIBmcBoqrrOlgdi1zEgaZrNlpoJMgE+wQRkaJEAZlp8sx4jwxkJz+gHAa5T+WBDX/w==
+  dependencies:
+    object-scan "14.0.0"
+
+object-hash-strict@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/object-hash-strict/-/object-hash-strict-2.0.3.tgz#201aa222cc11aee22117b11defe55a0835761002"
+  integrity sha512-i+6kPWz+/ZXB1ZpNWY1IZntNf1ojcF1XTqQB0uL3xTYaxkf4Po3cYyL5xWwSGangB9LHUmlbw9+o3yMF1TCedw==
   dependencies:
     object-hash "2.1.1"
-    object-scan "13.9.1"
+    object-scan "14.0.0"
 
 object-hash@2.1.1:
   version "2.1.1"
@@ -5684,6 +5720,11 @@ object-scan@13.9.1:
   version "13.9.1"
   resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-13.9.1.tgz#03ab1be0d55e29471774945173a5fdcfcf5ebb35"
   integrity sha512-81wHtSNKDEJiuo02QDsijTL0KHmKejAbgXzlFADnRIwhAAAuCFbdoPOZ+ZFCmssZWJTi/tq3Q0ohPw9YqJq/Cg==
+
+object-scan@14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-14.0.0.tgz#a09dfefe6a69bcdce87162e5e9fa19d90c4dc1a7"
+  integrity sha512-hcs9kSd2NUlpgPb3rN5Q9L5z6oP/b9DjyYOEITvctHfnQ/S0BoXHU8e5zzrMx4MGCedtXhh1ScZT+UqcYUoz0A==
 
 object-treeify@1.1.31:
   version "1.1.31"
@@ -6262,12 +6303,12 @@ promise-inflight@^1.0.1, promise-inflight@~1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-promise-pool-ext@1.3.13:
-  version "1.3.13"
-  resolved "https://registry.yarnpkg.com/promise-pool-ext/-/promise-pool-ext-1.3.13.tgz#8b6a3e7c1b850c2f872aa3aac897cea89d01c9f0"
-  integrity sha512-G9Pr8q5461WqPtYyDSmOzeYlro8LmnNbpj4M51wOeEPWrXEgU2Yy6kvcmbO0CPZHEJelgJdOZPKyPqQeMMkSRQ==
+promise-pool-ext@1.3.14:
+  version "1.3.14"
+  resolved "https://registry.yarnpkg.com/promise-pool-ext/-/promise-pool-ext-1.3.14.tgz#bd9493d5f9b13aef8420ed74d952bfb60f7872a7"
+  integrity sha512-gUPDUU4YviHOYy3RJJxm+UAx+mVnIdcSEBMo+YIMeCy2xz0ZABoTkoDBO9DPlpfzlgniY41/4LdqdfrDO39Qzg==
   dependencies:
-    joi-strict "1.2.9"
+    joi-strict "1.2.10"
 
 promise-retry@^1.1.1:
   version "1.1.1"
