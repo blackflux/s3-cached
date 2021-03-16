@@ -1080,17 +1080,17 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@9.1.1:
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.1.1.tgz#aa61e173ae83257404da40669e10e6386131cd61"
-  integrity sha512-UUBd2+o8VTKF5IIbeNo6eeBWa5tBXiJ/sX6vASzoFYeiiQyBi+fdZGyeG1Bu68sh0vC9mLXsGCZC0/gYSbnVKw==
+aws-sdk-wrap@9.2.1:
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.2.1.tgz#14bde322b6b45087adae1fea5a8ca6d310977c8f"
+  integrity sha512-RkP0E6PGSCxvW4P0u0K0EccTVMVtRp6PfW4Ng1ifVPjWVn+1qXKtvizn3TrPpS9w7t9enLAfuyEGR9fB7go8IQ==
   dependencies:
     dynamodb-toolbox "0.3.3"
-    joi-strict "1.2.11"
+    joi-strict "2.0.0"
     lambda-async "1.0.11"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
-    object-fields "2.0.22"
+    object-fields "3.0.0"
     object-hash-strict "2.0.3"
     promise-pool-ext "1.3.14"
     smart-fs "1.12.6"
@@ -4152,13 +4152,6 @@ joi-strict@1.2.10:
   dependencies:
     "@hapi/joi" "17.1.1"
 
-joi-strict@1.2.11:
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-1.2.11.tgz#237d85a0d2b2b6776a9364e350a27b17c87ce014"
-  integrity sha512-lQzZRh8iY76PDRBktFJeDJfOJFjLBBIC6GlaZlFrokCyolGO0J/AKBOCuJapV2pGI0dScF3UzV3gjkyvDAvybw==
-  dependencies:
-    "@hapi/joi" "17.1.1"
-
 joi-strict@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-2.0.0.tgz#f5991d1f73d96107c0e6c1772a3f7898a73fdff8"
@@ -5631,10 +5624,10 @@ object-copy@^0.1.0:
     define-property "^0.2.5"
     kind-of "^3.0.3"
 
-object-fields@2.0.22:
-  version "2.0.22"
-  resolved "https://registry.yarnpkg.com/object-fields/-/object-fields-2.0.22.tgz#31d7943d7ad8297e86e44698df461b83a41c3215"
-  integrity sha512-RzLvuwTC4uqjF/QVLxrYnIBmcBoqrrOlgdi1zEgaZrNlpoJMgE+wQRkaJEAZlp8sx4jwxkJz+gHAa5T+WBDX/w==
+object-fields@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/object-fields/-/object-fields-3.0.0.tgz#90614dc7e973c5c168f596da023e33f5a83c65d1"
+  integrity sha512-b+y0vFLAPvxUv+9CFeOobkDONuuMVpRITGKsMaoxUqzEBa8qOFt/iLfnHN6aRrNHW/bqHJ0Y/EOYi1nSLGNOzg==
   dependencies:
     object-scan "14.0.0"
 
