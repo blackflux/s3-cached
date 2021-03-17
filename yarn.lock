@@ -4135,10 +4135,10 @@ joi@17.4.0:
     "@sideway/formula" "^3.0.0"
     "@sideway/pinpoint" "^2.0.0"
 
-js-gardener@3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-3.0.2.tgz#ab70068293b391069063343a8fd920de74619777"
-  integrity sha512-e4sJpa2543RLCtadDrYfz/AE1j1VfSElvXI2704Mb+74njm7xMCamg2FjZDkCpmfzJEQqeiHFg/PL+wxN38Gng==
+js-gardener@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/js-gardener/-/js-gardener-3.0.3.tgz#4f4b271e0c71faabe3707049b849e2fc0d402fc6"
+  integrity sha512-aDnPRmMpL19hL/ug50KaWi0efqftFzn/nqhQIUtYMlGPUa9EbKVOPwX77FCfpe0dxwk4y1Ztku/Jk4KcL+zoqQ==
   dependencies:
     chalk "4.1.0"
     fancy-log "1.3.3"
@@ -4148,7 +4148,7 @@ js-gardener@3.0.2:
     lodash.difference "4.5.0"
     mocha "8.3.2"
     npm-check "5.9.2"
-    robo-config "4.0.3"
+    robo-config "4.0.4"
 
 js-tokens@^3.0.0:
   version "3.0.2"
@@ -6804,10 +6804,10 @@ rimraf@^3.0.0, rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
-robo-config@4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/robo-config/-/robo-config-4.0.3.tgz#cea77d3930d54b9f884e9963c9c348b82b0d0b34"
-  integrity sha512-UzZyOocTYdukc3rE6PkyJ7Mj4p0W3GTEFblH0WDrr0BrevCSAWuUeqmdeJ1ux8FMNIsvlVh2hxHtDCjevrIo9Q==
+robo-config@4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/robo-config/-/robo-config-4.0.4.tgz#b226bcd3a92ac2b832db594c07ca997295a92299"
+  integrity sha512-7PdNfGUJCwXHlQW4Eo1JaxuP58Uxo3hPV9mSXWwd+JIp9Zr+4geiakJ02wjdfZRQRDVsxsxbXadOuR22HPcm6Q==
   dependencies:
     app-root-path "3.0.0"
     deepmerge "4.2.2"
@@ -6819,7 +6819,7 @@ robo-config@4.0.3:
     object-lib "3.0.0"
     object-scan "14.0.0"
     object-treeify "2.0.0"
-    smart-fs "2.0.1"
+    smart-fs "2.0.2"
 
 run-async@^0.1.0:
   version "0.1.0"
