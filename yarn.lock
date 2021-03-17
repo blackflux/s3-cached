@@ -1052,10 +1052,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@9.2.6:
-  version "9.2.6"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.2.6.tgz#4885a475578fdb9b1c4b010e6d9508c17af652a2"
-  integrity sha512-oYjFc/N1ylp+jc5DXjdqOMOv1Eo3wZpDn+vgqfd+d9LACo6J5ha6/RbvQn2vOSq8R+a5ZkB8slFGukALRj373g==
+aws-sdk-wrap@9.2.7:
+  version "9.2.7"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.2.7.tgz#d27550007439080822cb22534bb3fa569f7a56ac"
+  integrity sha512-HcLWTGSx0vr3KeLRCPimKZMebqw/8HGn6rXY5h7/fHuV93LJHLocagIwBIMMB8XC8KqE+1kZqqyE0jO9N0aegg==
   dependencies:
     dynamodb-toolbox "0.3.3"
     joi-strict "2.0.0"
@@ -1064,7 +1064,7 @@ aws-sdk-wrap@9.2.6:
     lodash.get "4.4.2"
     object-fields "3.0.0"
     object-hash-strict "3.0.0"
-    promise-pool-ext "2.0.0"
+    promise-pool-ext "2.1.1"
     smart-fs "2.0.2"
 
 aws-sdk@2.866.0:
@@ -6208,10 +6208,10 @@ promise-inflight@^1.0.1, promise-inflight@~1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-promise-pool-ext@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/promise-pool-ext/-/promise-pool-ext-2.0.0.tgz#ce6e7321b67fc474d92afe5bf9c1ee4c5db01a11"
-  integrity sha512-FjI28rV7/28higYjA8JJdIMO83LCckIRjUMR0lUSkoCqZQReQVGq7Pb5XE21eHeBrxaihd9l51uml0rfJoWfHw==
+promise-pool-ext@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/promise-pool-ext/-/promise-pool-ext-2.1.1.tgz#d08b90df4a99bae07d9f02a3b6aa5e76f136d61e"
+  integrity sha512-R0+5NAzDvHq+ftr2756MtwtKOGQKLLRnnswVBtaDAoxTktnkMSHax42qQ3JR7BH5BYeyJvhcLd4IiHY8vCV6eA==
   dependencies:
     joi-strict "2.0.0"
 
