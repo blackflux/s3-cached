@@ -47,7 +47,7 @@
   },
   "homepage": "https://github.com/blackflux/s3-cached#readme",
   "dependencies": {
-    "aws-sdk-wrap": "9.2.6",
+    "aws-sdk-wrap": "9.2.7",
     "cache-manager": "3.4.1",
     "cache-manager-fs": "1.0.8",
     "lodash.defaults": "4.2.0",
@@ -59,7 +59,7 @@
     "@babel/register": "7.13.8",
     "@blackflux/eslint-plugin-rules": "2.0.3",
     "@blackflux/robo-config-plugin": "5.0.0",
-    "aws-sdk": "2.865.0",
+    "aws-sdk": "2.866.0",
     "babel-eslint": "10.1.0",
     "babel-preset-latest-node": "5.5.1",
     "chai": "4.3.4",
