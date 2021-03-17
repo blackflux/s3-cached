@@ -1052,10 +1052,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@9.2.5:
-  version "9.2.5"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.2.5.tgz#567af20380e187f8521c3585a574e02ad04218a7"
-  integrity sha512-X7qCi0DfZ8VrjzeqGMUUbIpYhFSn8HURkpR41122PiVExVl2LBlKabHhE5org7QmuhfmhGtJE3aj7yfRkQhiIQ==
+aws-sdk-wrap@9.2.6:
+  version "9.2.6"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.2.6.tgz#4885a475578fdb9b1c4b010e6d9508c17af652a2"
+  integrity sha512-oYjFc/N1ylp+jc5DXjdqOMOv1Eo3wZpDn+vgqfd+d9LACo6J5ha6/RbvQn2vOSq8R+a5ZkB8slFGukALRj373g==
   dependencies:
     dynamodb-toolbox "0.3.3"
     joi-strict "2.0.0"
@@ -1065,7 +1065,7 @@ aws-sdk-wrap@9.2.5:
     object-fields "3.0.0"
     object-hash-strict "3.0.0"
     promise-pool-ext "2.0.0"
-    smart-fs "2.0.1"
+    smart-fs "2.0.2"
 
 aws-sdk@2.865.0:
   version "2.865.0"
@@ -5619,13 +5619,6 @@ object-keys@^1.0.12, object-keys@^1.1.1:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
   integrity sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==
 
-object-lib@2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/object-lib/-/object-lib-2.1.2.tgz#d427c0b594825ef996c2975546f46a921e73e119"
-  integrity sha512-3ont7R1yb+HxwCENdllpuIVTOul6OpK/Z5cxFImVkrBigQmDLG9ltTjmjnpBQUJkO2b4cBV06JyzfnQHYud2Jg==
-  dependencies:
-    object-scan "14.0.0"
-
 object-lib@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/object-lib/-/object-lib-3.0.0.tgz#630e437ef876f57d0483e54b485894ab37aca23e"
@@ -7045,20 +7038,6 @@ smart-buffer@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.1.0.tgz#91605c25d91652f4661ea69ccf45f1b331ca21ba"
   integrity sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw==
-
-smart-fs@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-2.0.1.tgz#ab4cc9c4f7960557b742b327203ab65b448f57a8"
-  integrity sha512-546boWSVG4HPBNPVuoYWl7mi6bp0Xn8IqTJJv9e+qqArJNV5RUIhsIzFv05/bK8iNpFarEKK0M0+o0NUoIz/fQ==
-  dependencies:
-    fs-extra "9.1.0"
-    js-yaml "4.0.0"
-    json-stringify-pretty-compact "3.0.0"
-    lodash.clonedeep "4.5.0"
-    lodash.isequal "4.5.0"
-    object-lib "2.1.2"
-    xml-js "1.6.11"
-    yaml-boost "2.0.0"
 
 smart-fs@2.0.2:
   version "2.0.2"
