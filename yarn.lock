@@ -1052,20 +1052,20 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@9.2.3:
-  version "9.2.3"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.2.3.tgz#593fea57fbb082bfc50749c5573ef17572e0f449"
-  integrity sha512-kjXX/bdqyKt5Mbg9TU65gwOxNUYOpg/i6RacfOlTKB13Wz3EpBQfszYyvUYuElOAvR8FlHnhoQsZ6221b/6EzQ==
+aws-sdk-wrap@9.2.5:
+  version "9.2.5"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.2.5.tgz#567af20380e187f8521c3585a574e02ad04218a7"
+  integrity sha512-X7qCi0DfZ8VrjzeqGMUUbIpYhFSn8HURkpR41122PiVExVl2LBlKabHhE5org7QmuhfmhGtJE3aj7yfRkQhiIQ==
   dependencies:
     dynamodb-toolbox "0.3.3"
     joi-strict "2.0.0"
-    lambda-async "1.0.11"
+    lambda-async "2.0.0"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
     object-fields "3.0.0"
     object-hash-strict "3.0.0"
     promise-pool-ext "2.0.0"
-    smart-fs "2.0.0"
+    smart-fs "2.0.1"
 
 aws-sdk@2.865.0:
   version "2.865.0"
@@ -4292,10 +4292,10 @@ kind-of@^6.0.0, kind-of@^6.0.2, kind-of@^6.0.3:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-lambda-async@1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/lambda-async/-/lambda-async-1.0.11.tgz#389fba16cdcc7c30f2eb0335be8faac3358d6c77"
-  integrity sha512-8gNC37n9LmDp7+PfgseK7tZHzW0HpatxmFzrhTGhDqZOGqlxf3TlErp4mW4ZJCMjXRff7DBFNnA49HtdKUTUAw==
+lambda-async@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/lambda-async/-/lambda-async-2.0.0.tgz#6792b79dd180ca8e0d73aba7d44e8fdd499d87fa"
+  integrity sha512-1Cm/ly+aAwWBdvm4eUMdQhQiHdF9jKVimXwWlq9iy0YipX17CCyG6Ku6/gChMhBTqcgpNSsAm2AvTZWZt0pYgA==
 
 latest-version@^3.0.0:
   version "3.1.0"
@@ -7046,20 +7046,6 @@ smart-buffer@^4.1.0:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.1.0.tgz#91605c25d91652f4661ea69ccf45f1b331ca21ba"
   integrity sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw==
 
-smart-fs@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-2.0.0.tgz#10a2136594d593e7b683ccbe8e2ec120434701dd"
-  integrity sha512-QdXwIvNL9igSKThXvf5b4UMJVAfv9zrbJALDwjO1ATidaW+wvAVo/MNk2EQ3uSNATuhqaRnjgKB+diA1wnZgGQ==
-  dependencies:
-    fs-extra "9.1.0"
-    js-yaml "4.0.0"
-    json-stringify-pretty-compact "3.0.0"
-    lodash.clonedeep "4.5.0"
-    lodash.isequal "4.5.0"
-    object-lib "2.1.2"
-    xml-js "1.6.11"
-    yaml-boost "1.10.7"
-
 smart-fs@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-2.0.1.tgz#ab4cc9c4f7960557b742b327203ab65b448f57a8"
@@ -8367,16 +8353,6 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
-
-yaml-boost@1.10.7:
-  version "1.10.7"
-  resolved "https://registry.yarnpkg.com/yaml-boost/-/yaml-boost-1.10.7.tgz#121e32ad386e4d4561bb2a9a8500e0b0d7ca8265"
-  integrity sha512-X/NooMiFNKvVYDLwJY26YohPdDHyoiNHLd9H9TM1BMxwCrznnQy1HMXLEB7DLXNDe95KduBEAqC0jVqSabvrEA==
-  dependencies:
-    js-yaml "4.0.0"
-    lodash.get "4.4.2"
-    lodash.mergewith "4.6.2"
-    lodash.set "4.3.2"
 
 yaml-boost@2.0.0:
   version "2.0.0"
