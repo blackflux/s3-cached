@@ -1350,10 +1350,10 @@ cache-manager-fs@1.0.8:
     fs-promise "^0.3.1"
     uuid "^2.0.1"
 
-cache-manager@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-3.4.1.tgz#57d366efc4b06fe2b1246d84356df7bc5e24674d"
-  integrity sha512-yE50UL7AcuQ1ZydREl9OvPYD74gw3qS9HtZTY+2gS7fcZeIsyiof2UF+WReqg5ZX+852anbDe1fAtjsaMYT2yw==
+cache-manager@3.4.2:
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/cache-manager/-/cache-manager-3.4.2.tgz#a7c810688f85da71156183a893d097023971183b"
+  integrity sha512-Hh2G0b0AXhOxQ4k1bGyGlJ2woRIISRCFSb8EdiVtQ+Oc4ejI0e7cKLWHX+tAZ49DK2v0uFxV8b6gXMlzdpb6iQ==
   dependencies:
     async "3.2.0"
     lodash "^4.17.21"
