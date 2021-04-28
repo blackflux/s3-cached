@@ -1071,10 +1071,10 @@ aws-sdk-wrap@9.5.0:
     promise-pool-ext "2.1.1"
     smart-fs "2.0.2"
 
-aws-sdk@2.890.0:
-  version "2.890.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.890.0.tgz#95b6a2dc36d324a40ef4c9462bde111d1ff7c234"
-  integrity sha512-39rVXw0aJVnBpVSbZ6ZBaNop8VwkNKx9n+auxQdNnAJtJ9dftgWo4AZYXg0a5lMxIL7AmnlPXWAVPOWHvCeuJg==
+aws-sdk@2.893.0:
+  version "2.893.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.893.0.tgz#953116eeef20ed7ced1ee081ec249af6644ccf44"
+  integrity sha512-yebi0KfJSyYcaYF+sDJ6Wq7OLq/8VZZiP7mN3fYfE3XZQV9MUYHMITqyeVxKG8BMvzkYfr6gpx1XZOJAYzfvJQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
