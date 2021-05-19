@@ -1062,19 +1062,19 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-aws-sdk-wrap@9.5.0:
-  version "9.5.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.5.0.tgz#12414644d230c9d3d2cb8e7fc74f325c5da2e813"
-  integrity sha512-im7ixQN9dKY+iCNA/E/NVlFrlskpH0A1dq6/en8UIYHEc7TOyG3BBNXXkxRt3HazRoQghHQF5YXPo88JaEk4Yw==
+aws-sdk-wrap@9.5.1:
+  version "9.5.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk-wrap/-/aws-sdk-wrap-9.5.1.tgz#eb24a92e1442c8a6311ccfe8c711f9d346ead8cb"
+  integrity sha512-fLt4rCbfA/s1jHWCOHE/+2B+fpe0JAKFZ51DGICuFNPQL7BSpnKRyCIv2n6w65Avr5/tOmDCJ+SDFM/UbVy2wg==
   dependencies:
-    dynamodb-toolbox "0.3.3"
+    dynamodb-toolbox "0.3.4"
     joi-strict "2.0.0"
     lambda-async "2.0.0"
     lodash.chunk "4.2.0"
     lodash.get "4.4.2"
     object-fields "3.0.0"
     object-hash-strict "3.0.0"
-    object-scan "14.0.0"
+    object-scan "16.0.2"
     promise-pool-ext "2.1.1"
     smart-fs "2.0.2"
 
@@ -2297,10 +2297,10 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
-dynamodb-toolbox@0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/dynamodb-toolbox/-/dynamodb-toolbox-0.3.3.tgz#77343085813c053fa5e123c4a1332ff0e133d953"
-  integrity sha512-6kA+H5rve1OI38XTHbBa06kf+EIzEItxJW/3MoCqhi3YAXdk4uxPIbEu0f+xyd/s8fQRBF7i7ibJnICpDY6g2Q==
+dynamodb-toolbox@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/dynamodb-toolbox/-/dynamodb-toolbox-0.3.4.tgz#5cd74536d88ae2901375dce0041fac0424c91e95"
+  integrity sha512-5J4f4EMkcO8jJw/TDAVG4Vy0tlCaDOMYILutPUe1fvTFSuw0QKIYPifY17bAj1QKkx2tB96dLEXNntmWoWvDng==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -5789,6 +5789,11 @@ object-scan@14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-14.0.0.tgz#a09dfefe6a69bcdce87162e5e9fa19d90c4dc1a7"
   integrity sha512-hcs9kSd2NUlpgPb3rN5Q9L5z6oP/b9DjyYOEITvctHfnQ/S0BoXHU8e5zzrMx4MGCedtXhh1ScZT+UqcYUoz0A==
+
+object-scan@16.0.2:
+  version "16.0.2"
+  resolved "https://registry.yarnpkg.com/object-scan/-/object-scan-16.0.2.tgz#82471d2cdc81be847d8d92985823a11d8088c189"
+  integrity sha512-teY0s5hF/0VzDw7yLmgngqeRimml0KYTlbJCCkpQByY0Gy5u0Z3W6SpQ/SdbJkGgrYe6BwEG+7t/UrU6SkCrgw==
 
 object-treeify@2.0.0:
   version "2.0.0"
