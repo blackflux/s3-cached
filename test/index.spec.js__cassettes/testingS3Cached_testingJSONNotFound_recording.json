@@ -1,8 +1,8 @@
 [
   {
-    "scope": "https://dummy-bucket-name.s3.amazonaws.com:443",
+    "scope": "https://dummy-bucket-name.s3.us-west-2.amazonaws.com:443",
     "method": "GET",
-    "path": "/unknown-file.json",
+    "path": "/unknown-file.json?x-id=GetObject",
     "body": "",
     "status": 403,
     "response": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>0F253AE090BFFF93</RequestId><HostId>RIpWwXYHCLAF6tr/ybHFHQVjVH8FhiFBn4/F5AYljoJXHq+dIgviRq2d+vFdG9j+kOzdrn1XpjM=</HostId></Error>",

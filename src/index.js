@@ -1,22 +1,20 @@
-const assert = require('assert');
-const zlib = require('zlib');
-const AWS = require('aws-sdk-wrap');
-const cacheManager = require('cache-manager');
-const fsStore = require('cache-manager-fs');
-const defaults = require('lodash.defaults');
-const get = require('lodash.get');
+import assert from 'assert';
+import zlib from 'zlib';
+import cacheManager from 'cache-manager';
+import fsStore from 'cache-manager-fs';
+import defaults from 'lodash.defaults';
+import get from 'lodash.get';
 
-module.exports = (options) => {
+export default (options) => {
   assert(options instanceof Object && !Array.isArray(options));
   assert(options.ttlDefault === undefined, 'Please use ttl instead.');
   defaults(options, {
     ttl: 600, // eventually we invalidate cached data
     diskMaxSize: 469762048, // lambda allows for ~512mb in /tmp directory
     diskTmpDirectory: '/tmp',
-    memoryLimit: 100,
-    logger: null
+    memoryLimit: 100
   });
-  const aws = AWS({ config: options.s3Options, logger: options.logger });
+  const awsSdkWrap = options.awsSdkWrap;
   const memoryCache = cacheManager.caching({ store: 'memory', max: options.memoryLimit });
   const diskCache = cacheManager.caching({
     store: fsStore,
@@ -38,7 +36,7 @@ module.exports = (options) => {
     assert(typeof prefix === 'string' || prefix === undefined);
     assert(typeof ttl === 'number');
     assert(typeof bucket === 'string');
-    return aws.s3.listObjects({ bucket, prefix });
+    return awsSdkWrap.s3.listObjects({ bucket, prefix });
   }, { ttl });
 
   const getBinaryObjectCached = (
@@ -54,16 +52,18 @@ module.exports = (options) => {
     assert(typeof bucket === 'string');
     assert(Array.isArray(modifications));
     return multiCacheWrap(key, () => [
-      (data) => data.Body,
+      async (data) => {
+        const byteArray = await data.Body.transformToByteArray();
+        return Buffer.from(byteArray);
+      },
       ...modifications
     ].reduce(
       (p, c) => p.then(c),
-      aws.call('s3:getObject', { Bucket: bucket, Key: key })
+      awsSdkWrap.call('S3:GetObjectCommand', { Bucket: bucket, Key: key })
     ), { ttl });
   };
 
   return {
-    aws,
     getKeysCached,
     getBinaryObjectCached,
     getTextObjectCached: (key, opts = {}) => {

@@ -29,10 +29,7 @@ S3 File Access Abstraction providing Memory and Disk Caching Layer. Useful e.g. 
 ```javascript
 const s3 = require('s3-cached')({
   bucket: 'YOUR_BUCKET_NAME',
-  s3Options: {
-    accessKeyId: 'YOUR_ACCESS_KEY_ID',
-    secretAccessKey: 'YOUR_SECRET_ACCESS_KEY'
-  }
+  awsSdkWrap: AwsSdkWrap(/* ... */)
 });
 
 s3.getJsonObjectCached('large.json').then((json) => {
@@ -50,7 +47,7 @@ s3.getJsonObjectCached('large.json').then((json) => {
 - `getGzipObjectCached`: retrieve file content, gunzip and return as promise
 - `getKeysCached`: retrieve all file names in bucket with given prefix
 
-Note that you can specify the ttl and/or custom bucket on a per file basis by calling 
+Note that you can specify the ttl and/or custom bucket on a per file basis by calling
 e.g. `s3.getJsonObjectCached(FILE_NAME, { ttl, bucket })`. For exact method signatures please check the code.
 
 ## Other Function / Exports
