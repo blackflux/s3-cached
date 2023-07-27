@@ -1,8 +1,8 @@
 [
   {
-    "scope": "https://dummy-bucket-name.s3.amazonaws.com:443",
+    "scope": "https://dummy-bucket-name.s3.us-west-2.amazonaws.com:443",
     "method": "GET",
-    "path": "/large.json",
+    "path": "/large.json?x-id=GetObject",
     "body": "",
     "status": 200,
     "response": [
