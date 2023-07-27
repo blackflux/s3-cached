@@ -52,10 +52,8 @@ export default (options) => {
     assert(typeof bucket === 'string');
     assert(Array.isArray(modifications));
     return multiCacheWrap(key, () => [
-      async (data) => {
-        const byteArray = await data.Body.transformToByteArray();
-        return Buffer.from(byteArray);
-      },
+      (data) => data.Body.transformToByteArray(),
+      (byteArray) => Buffer.from(byteArray),
       ...modifications
     ].reduce(
       (p, c) => p.then(c),
