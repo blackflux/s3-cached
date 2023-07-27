@@ -1,13 +1,33 @@
-const fs = require('fs');
-const path = require('path');
-const expect = require('chai').expect;
-const { describe } = require('node-tdd');
-const S3Cached = require('../src/index');
+import fs from 'smart-fs';
+import path from 'path';
+import { expect } from 'chai';
+import { describe } from 'node-tdd';
+import AwsSdkWrap from 'aws-sdk-wrap';
+import {
+  S3Client,
+  GetObjectCommand,
+  ListObjectsV2Command
+} from '@aws-sdk/client-s3';
+import S3Cached from '../src/index.js';
 
-describe('Testing S3-Cached', { useNock: true }, () => {
+describe('Testing S3-Cached', {
+  useNock: true,
+  nockStripHeaders: true
+}, () => {
   let s3Cached;
   before(() => {
-    s3Cached = S3Cached({ bucket: process.env.S3_BUCKET_NAME });
+    s3Cached = S3Cached({
+      bucket: process.env.S3_BUCKET_NAME,
+      awsSdkWrap: AwsSdkWrap({
+        services: {
+          S3: S3Client,
+          'S3:CMD': {
+            GetObjectCommand,
+            ListObjectsV2Command
+          }
+        }
+      })
+    });
   });
   afterEach(async () => {
     await s3Cached.resetCache();
@@ -15,7 +35,6 @@ describe('Testing S3-Cached', { useNock: true }, () => {
 
   it('Testing S3Cached exports', () => {
     expect(Object.keys(s3Cached)).to.deep.equal([
-      'aws',
       'getKeysCached',
       'getBinaryObjectCached',
       'getTextObjectCached',
@@ -32,12 +51,12 @@ describe('Testing S3-Cached', { useNock: true }, () => {
 
   it('Testing Invalid JSON', async ({ capture }) => {
     const e = await capture(() => s3Cached.getJsonObjectCached('invalid.json'));
-    expect(e.message).to.equal('Unexpected token \u001f in JSON at position 0');
+    expect(e.name).to.equal('SyntaxError');
   });
 
   it('Testing Binary', async () => {
     const r = await s3Cached.getBinaryObjectCached('large.bin');
-    expect(r).to.deep.equal(fs.readFileSync(path.join(__dirname, 'files', 'large.bin')));
+    expect(r).to.deep.equal(fs.readFileSync(path.join(fs.dirname(import.meta.url), 'files', 'large.bin')));
   });
 
   it('Testing Text', async () => {
