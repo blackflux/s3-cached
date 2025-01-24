@@ -62,7 +62,7 @@
     "@blackflux/robo-config-plugin": "9.1.10",
     "c8": "8.0.1",
     "chai": "4.3.7",
-    "eslint": "8.46.0",
+    "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.28.0",
     "eslint-plugin-json": "3.1.0",
