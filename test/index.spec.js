@@ -15,6 +15,7 @@ describe('Testing S3-Cached', {
   nockStripHeaders: true
 }, () => {
   let s3Cached;
+
   before(() => {
     s3Cached = S3Cached({
       bucket: process.env.S3_BUCKET_NAME,
@@ -29,6 +30,7 @@ describe('Testing S3-Cached', {
       })
     });
   });
+
   afterEach(async () => {
     await s3Cached.resetCache();
   });
