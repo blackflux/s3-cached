@@ -48,13 +48,13 @@
   "homepage": "https://github.com/blackflux/s3-cached#readme",
   "dependencies": {
     "aws-sdk-wrap": "13.3.2",
-    "cache-manager": "3.4.4",
-    "cache-manager-fs": "1.0.9",
+    "cache-manager": "6.4.0",
+    "cache-manager-fs": "1.0.12",
     "lodash.defaults": "4.2.0",
     "lodash.get": "4.4.2"
   },
   "devDependencies": {
-    "@aws-sdk/client-s3": "3.385.0",
+    "@aws-sdk/client-s3": "3.735.0",
     "@babel/core": "7.26.7",
     "@babel/eslint-parser": "7.26.5",
     "@babel/register": "7.25.9",
